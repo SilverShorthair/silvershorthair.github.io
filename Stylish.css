@@ -1,0 +1,72 @@
+﻿a:link {
+    color: #adb0ff;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #adb0ff;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4fcddb;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active {
+    color: #f57373;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+body {
+    background-color: #160045;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+body {
+    color: #ffffff;
+}
+
+.TheSillyButtons {
+    background-color: #131b37;
+    background-image: linear-gradient(#13a1b37, #2c315e, #131b37);
+    color: white;
+    border: solid #1c2140 2.5px;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 5px 50px;
+    cursor: pointer;
+    box-shadow: 0 8px #2c315e;
+}
+
+.TheSillierButtons {
+    background-image: linear-gradient(#131b37, #2c315e, #131b37);
+}
+
+header {
+    background-image: linear-gradient(#080019, #080019, #160045);
+    background-color: #1c2140;
+    margin: -8px;
+}
+
+.TheSillierButtons:hover {
+    background-image: linear-gradient(#0a0d1d, #25294b, #0a0d1d);
+    box-shadow: 0 8px #1b1f3c;
+}
+
+.TheSillyButtons:active {
+    background-image: linear-gradient(#04060d, #131524, #04060d);
+    box-shadow: 0 4px #14172c;
+    transform: translateY(4px);
+}
