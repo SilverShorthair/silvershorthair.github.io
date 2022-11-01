@@ -54,8 +54,18 @@ body {
     background-image: linear-gradient(#131b37, #2c315e, #131b37);
 }
 
+.PortalButton {
+    background-image: linear-gradient(#ff7d00, #0063ff);
+}
+
 header {
     background-image: linear-gradient(#080019, #080019, #160045);
+    background-color: #1c2140;
+    margin: -8px;
+}
+
+footer {
+    background-image: linear-gradient(#160045, #160045, #080019);
     background-color: #1c2140;
     margin: -8px;
 }
