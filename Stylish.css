@@ -55,7 +55,32 @@ body {
 }
 
 .PortalButton {
-    background-image: linear-gradient(#ff7d00, #0063ff);
+    background-color: #ffffff;
+    border: solid #c6c6c6 2.5px;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: #c6c6c6;
+    font-size: 20px;
+    margin: 5px 50px;
+    cursor: pointer;
+    box-shadow: 0 8px #c6c6c6;
+}
+
+.PortalButton:hover {
+    color:aqua;
+    background-color: #15228d;
+    border: solid #006de4 2.5px;
+    box-shadow: 0 8px #006de4;
+}
+
+.PortalButton:active {
+    background-color: #a46707;
+    border: solid #ff9400 2.5px;
+    box-shadow: 0 4px #ff9400;
+    transform: translateY(4px);
 }
 
 header {
@@ -68,6 +93,8 @@ footer {
     background-image: linear-gradient(#160045, #160045, #080019);
     background-color: #1c2140;
     margin: -8px;
+    margin-bottom:-15px;
+    padding-bottom:0px;
 }
 
 .TheSillierButtons:hover {
