@@ -107,3 +107,49 @@ footer {
     box-shadow: 0 4px #14172c;
     transform: translateY(4px);
 }
+
+::-webkit-scrollbar {
+    width: 32px;
+}
+
+::-webkit-scrollbar-track {
+    background-image: url('Assets/Scrollbar background.png');
+}
+
+::-webkit-scrollbar-thumb {
+    background: url('Assets/Scrollbar Thumb.png') no-repeat;
+    background-size: 28px 32px;
+    background-position: 2px;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-image: url('Assets/Scrollbar click.png');
+    }
+
+::-webkit-scrollbar-button:vertical:increment {
+    background-image: url('Assets/Scrollbar down.png');
+    background-size: 32px 31px;
+    width: 32px;
+    height: 31px;
+}
+
+::-webkit-scrollbar-button:vertical:decrement {
+    background-image: url('Assets/Scrollbar up.png');
+    background-size: 32px 31px;
+    width: 32px;
+    height: 31px;
+}
+
+::-webkit-scrollbar-button:vertical:increment:hover {
+    background-image: url('Assets/Scrollbar down click.png');
+    background-size: 32px 31px;
+    width: 32px;
+    height: 31px;
+}
+
+::-webkit-scrollbar-button:vertical:decrement:hover {
+    background-image: url('Assets/Scrollbar up click.png');
+    background-size: 32px 31px;
+    width: 32px;
+    height: 31px;
+}
