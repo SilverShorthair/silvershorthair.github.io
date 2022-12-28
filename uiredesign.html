@@ -1,23 +1,190 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-image: linear-gradient(#080019, #080019, #160045);
+        background-color: #1c2140;
+        margin: -15px;
+    }
+
+    a:link {
+        color: #adb0ff;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: #adb0ff;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #4fcddb;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:active {
+        color: #f57373;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    body {
+        background-image: url('Assets/Background.png');
+        color: #ffffff;
+    }
+
+    h1 {
+        color: #ffffff;
+    }
+
+
+ /* buttons */
+
+ .TheSillyButtons {
+    background-color: #131b37;
+    background-image: linear-gradient(#13a1b37, #2c315e, #131b37);
+    color: white;
+    border: solid #1c2140 2.5px;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 5px 50px;
+    cursor: pointer;
+    box-shadow: 0 8px #2c315e;
+}
+
+.TheSillierButtons {
+    background-image: linear-gradient(#131b37, #2c315e, #131b37);
+}
+
+.PortalButton {
+    background-color: #ffffff;
+    border: solid #c6c6c6 2.5px;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: #c6c6c6;
+    font-size: 20px;
+    margin: 5px 50px;
+    cursor: pointer;
+    box-shadow: 0 8px #c6c6c6;
+}
+
+.TheSillierButtons:hover {
+    background-image: linear-gradient(#0a0d1d, #25294b, #0a0d1d);
+    box-shadow: 0 8px #1b1f3c;
+}
+
+.TheSillyButtons:active {
+    background-image: linear-gradient(#04060d, #131524, #04060d);
+    box-shadow: 0 4px #14172c;
+    transform: translateY(4px);
+}
+
+.PortalButton:hover {
+    color:aqua;
+    background-color: #15228d;
+    border: solid #006de4 2.5px;
+    box-shadow: 0 8px #006de4;
+}
+
+.PortalButton:active {
+    background-color: #a46707;
+    border: solid #ff9400 2.5px;
+    box-shadow: 0 4px #ff9400;
+    transform: translateY(4px);
+}
+
+/* divs */
+
+    .Real {
+        background-color: #160045;
+        color: white;
+        width: 80%;
+        height: 100%;
+        padding: 15px;
+        margin: auto;
+    }
+
+/* scrollbar */
+
+    ::-webkit-scrollbar {
+        width: 32px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-image: url('Assets/Scrollbar background.png');
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: url('Assets/Scrollbar Thumb.png') no-repeat;
+        background-size: 28px 32px;
+        background-position: 2px;
+    }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-image: url('Assets/Scrollbar click.png');
+        }
+
+    ::-webkit-scrollbar-button:vertical:increment {
+        background-image: url('Assets/Scrollbar down.png');
+        background-size: 32px 31px;
+        width: 32px;
+        height: 31px;
+    }
+
+    ::-webkit-scrollbar-button:vertical:decrement {
+        background-image: url('Assets/Scrollbar up.png');
+        background-size: 32px 31px;
+        width: 32px;
+        height: 31px;
+    }
+
+    ::-webkit-scrollbar-button:vertical:increment:hover {
+        background-image: url('Assets/Scrollbar down click.png');
+        background-size: 32px 31px;
+        width: 32px;
+        height: 31px;
+    }
+
+    ::-webkit-scrollbar-button:vertical:decrement:hover {
+        background-image: url('Assets/Scrollbar up click.png');
+        background-size: 32px 31px;
+        width: 32px;
+        height: 31px;
+    }
+
+    <html lang="en" >
+</style>
 <head>
-    <title>Home</title>
+    <title>Silver Site</title>
     <meta name="description" content="Website of The Most Famous A4 Sheet of Paper With A Fold On The Left Corner">
-    <link rel="icon" type="image/x-icon" href="Favicons/SmallSilver.png">
-    <link rel="stylesheet" href="Stylish.css" />
+    <link rel="icon" type="image/x-icon" href="Wheatley.png">
 </head>
 <body>
     <div class="Real">
         <header>
             <br />
             <center><img src="3D site logo (size fixed).png" alt="THE SILVER SHORTHAIR WEBSITE" style="width:600px; padding-bottom: 10px;"></center><br /><br>
-            <center><div><button class="TheSillyButtons TheSillierButtons" onclick="window.location = 'https://silvershorthair.github.io/'"><img src="Favicons/SmallSilver.png" /> Homepage</button> <button class="TheSillyButtons TheSillierButtons" onclick="window.location = 'https://silvershorthair.github.io/portfolio/index.html'"><img src="Favicons/UnemployedSilver.png" /> Portfolio</button> <button class="TheSillyButtons TheSillierButtons" onclick="window.location = 'https://silvershorthair.github.io/ChangeLog'"><img src="Favicons/WrittenSilver.png" />Change Log</button> <button class="TheSillyButtons TheSillierButtons" onclick="window.location = 'https://silvershorthair.github.io/AboutMe'"><img src="Favicons/AboutSilver.png" />About Me</button> <button class="PortalButton" onclick="window.location = 'steam://launch/620'"><img src="Wheatley.png"></button></div></center>
+            <center><div><button class="TheSillyButtons TheSillierButtons" onclick="window.location = 'https://silvershorthair.github.io/'"><img src="Favicons/SmallSilver.png" /> Homepage</button> <button class="TheSillyButtons TheSillierButtons" onclick="window.location = 'https://silvershorthair.github.io/ChangeLog'"><img src="Favicons/WrittenSilver.png" />Change Log</button> <button class="TheSillyButtons TheSillierButtons" onclick="window.location = 'https://silvershorthair.github.io/AboutMe'"><img src="Favicons/AboutSilver.png" />About Me</button> <button class="PortalButton" onclick="window.location = 'steam://launch/620'"><img src="Wheatley.png"></button></div></center>
             <br /><br />
         </header>
         <br />
         <h1>Howdy!!!</h1>
         <p>
-            Hi, I'm <a href="https://silvershorthair.github.io/AboutMe">Silver</a>, and welcome to my website!!! I don't really know what the purpose of this is besides just making a fun thing. I might try and incorporate a blog, a <a href="https://silvershorthair.github.io/portfolio/index.html">portfolio</a>, or maybe some other practical aspect. Who knows. Point is it exists, and you have me to thank. That's a lie.
+            Hi, I'm <a href="https://silvershorthair.github.io/AboutMe">Silver</a>, and welcome to my website!!! I don't really know what the purpose of this is besides just making a fun thing. I might try and incorporate a blog, a portfolio, or maybe some other practical aspect. Who knows. Point is it exists, and you have me to thank. That's a lie.
             <h3>CREDITS:</h3>
             <ul>
                 <li>My friend <a href="https://miastonished.github.io/">Mia</a>, who's helped me a lot with the HTML and CSS and Javascript and even the website existing. If it wasn't for her, I wouldn't have gone "Huh, this is a silly website, I should learn HTML and do something cool like this too!" You can find the link to her website by clicking on her name (and in a few other spots around the site)</li>
@@ -65,8 +232,16 @@
         <h1 style="color:#d4a600;"> WEBSITE REVIEWS & AWARDS</h1>
         <p>
             The official Silver Shorthair website is loved by 100,00,000,000s of beings. Here's some of the reviews that people have written about the site!!!
+            <blockquote cite="SiteReviews">
+                Truly an amazing website!!! I love Silver Shorthair, and this website really let me appreciate Silver Shorthair.<br>I especially like the part where there's the ability to see Silver Shorthair's social medias!!!
+            </blockquote>
+            <i>- <a href="https://lemondemon.bandcamp.com/album/spirit-phone">ReelwebReviews</a>, 1992</i><br>
+            <blockquote cite="TheWebAwards">
+                We at The Web Awards love to see innovation on the internet, which is why we've decided to give the Silver Shorthair official website the<br /> award for Site Of The Year 2004
+            </blockquote>
+            <i>- <a href="https://lemondemon.bandcamp.com/album/spirit-phone">The Internet Website Page Of The Year Awards</a>, 2003</i><br>
             <blockquote cite="https://batashock.cf/SilverShorthairReview">
-                I enjoy                                  silver shorthair SO MUCH! she makes me very HAPPY! my <b>[omitted]</b> when i look at her BODY!
+                I enjoy                                  silver shorthair SO MUCH! he makes me very HAPPY! my <b>[omitted]</b> when i look at his BODY!
             </blockquote>
             <div id="demo" style="float:right;padding-right:1px;"></div>
             <i> - <a href="https://batashock.cf/SilverShorthairReview">Batashock</a>, 1997</i><br>
@@ -111,16 +286,14 @@
                 This website is so 2000 I'm going to <a href="https://silvershorthair.github.io/Semisol.mp4">stab you with a bl-</a>
             </blockquote>
             <i>- <a href="https://en.wikipedia.org/wiki/Sand_cat">Semisol</a>, 2023</i><br>
-            <blockquote cite="anonymous">
-                10/10 highly recommend to eldritch entities and constructs made of slip and bounce gel
-            </blockquote>
-            <i>- <a href="https://miastonished.github.io/aboutme">Anonymous</a>, Date Unknown</i><br>
             <blockquote cite="Mia">
                 <b>[omitted]</b>
             </blockquote>
             <i>- <a href="https://miastonished.github.io/aboutme">Mia</a>, 2022</i><br>
         </p>
         <hr />
+        <iframe style="border: 0; width: 560px; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3889296187/size=large/bgcol=333333/linkcol=e32c14/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://needlejuice.bandcamp.com/album/spirit-phone">Spirit Phone by Lemon Demon</a></iframe>
+        <hr>
         <p>
             <a href="https://silvershorthair.github.io/Bears.html"><img src="Rat stuff/Rat poster.jpg" alt="HAVE YOU SEEN THIS RAT" width="20%"></a>
         </p>
@@ -129,23 +302,5 @@
             <p style="text-align:center; font-size:15px;">&#169; AD 33 - 9999999 Silver Shorthair. all rights reserved</p>
             <p style="text-align:center; font-size:15px;">"A4 sheet of paper with a fold in the corner" is a registered trademark of <a href="miastonished.github.io">Mia</a></p>
         </footer>
-        </div class="Real">
-            <script>
-                let text;
-                if (Math.random() < 0.1) {
-                    text = "<img src='Ads/THETRUTHAd.png' style='cursor:progress;' onclick='Truth()'>";
-                } else {
-                    text = "<a href='https://www.youtube.com/channel/UCGkq3rsguMgb0eWj-hSInYg' target='_blank'><img src='Ads/THELIEAd.png'></a>";
-                }
-                document.getElementById("demo").innerHTML = text;
-
-                function Truth() {
-                    if (confirm("Do you wish to learn the truth?")) {
-                        location.replace('https://miastonished.github.io/THETRUTH');
-                    } else {
-                        location.replace('https://silvershorthair.github.io/LEARNLEARNLEARNLEARNLEARNLEARNLEARNLEARNLEARNLEARNLEARNLEARNLEARNLEARNLEARNLEARNLEARNLEARNLEARNLEARNLEARNLEARNLEARNLEARNLEARNLEARNLEARNLEARNLEARNLEARNLEARNLEARN');
-                    }
-                }
-            </script>
 </body>
 </html>

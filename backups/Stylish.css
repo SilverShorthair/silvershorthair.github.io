@@ -1,24 +1,4 @@
-﻿<style >
-html, body {
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-image: linear-gradient(#080019, #080019, #160045);
-    background-color: #1c2140;
-    margin: -15px;
-}
-
-footer {
-    background-image: linear-gradient(#160045, #160045, #080019);
-    background-color: #1c2140;
-    margin: -15px;
-    margin-bottom:-30px;
-    padding-bottom:0px;
-}
-
-a:link {
+﻿a:link {
     color: #adb0ff;
     background-color: transparent;
     text-decoration: none;
@@ -43,16 +23,16 @@ a:active {
 }
 
 body {
-    background-image: url('Assets/Background new.png');
-    color: #ffffff;
+    background-color: #160045;
 }
 
 h1 {
     color: #ffffff;
 }
 
-
-/* buttons */
+body {
+    color: #ffffff;
+}
 
 .TheSillyButtons {
     background-color: #131b37;
@@ -89,19 +69,8 @@ h1 {
     box-shadow: 0 8px #c6c6c6;
 }
 
-.TheSillierButtons:hover {
-    background-image: linear-gradient(#0a0d1d, #25294b, #0a0d1d);
-    box-shadow: 0 8px #1b1f3c;
-}
-
-.TheSillyButtons:active {
-    background-image: linear-gradient(#04060d, #131524, #04060d);
-    box-shadow: 0 4px #14172c;
-    transform: translateY(4px);
-}
-
 .PortalButton:hover {
-    color: aqua;
+    color:aqua;
     background-color: #15228d;
     border: solid #006de4 2.5px;
     box-shadow: 0 8px #006de4;
@@ -114,18 +83,30 @@ h1 {
     transform: translateY(4px);
 }
 
-/* divs */
-
-.Real {
-    background-color: #160045;
-    color: white;
-    width: 80%;
-    height: 100%;
-    padding: 15px;
-    margin: auto;
+header {
+    background-image: linear-gradient(#080019, #080019, #160045);
+    background-color: #1c2140;
+    margin: -8px;
 }
 
-/* scrollbar */
+footer {
+    background-image: linear-gradient(#160045, #160045, #080019);
+    background-color: #1c2140;
+    margin: -8px;
+    margin-bottom:-15px;
+    padding-bottom:0px;
+}
+
+.TheSillierButtons:hover {
+    background-image: linear-gradient(#0a0d1d, #25294b, #0a0d1d);
+    box-shadow: 0 8px #1b1f3c;
+}
+
+.TheSillyButtons:active {
+    background-image: linear-gradient(#04060d, #131524, #04060d);
+    box-shadow: 0 4px #14172c;
+    transform: translateY(4px);
+}
 
 ::-webkit-scrollbar {
     width: 32px;
@@ -172,5 +153,3 @@ h1 {
     width: 32px;
     height: 31px;
 }
-
-<html lang="en" >
