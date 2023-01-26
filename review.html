@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Review Submission</title>
+    <meta name="description" content="Website of The Most Famous A4 Sheet of Paper With A Fold On The Left Corner">
+    <link rel="icon" type="image/x-icon" href="Favicons/Trophy.png">
+    <style>
+        body {
+            background-image: url('Assets/trophy.png');
+            color: #ffffff;
+        }
+        .Realviews {
+            background-color: #f7f1cd;
+            color: black;
+            width: 960px;
+            height: 100%;
+            padding: 15px;
+            margin: auto;
+        }
+        .Real {
+            background-color: #160045;
+            color: white;
+            width: 80%;
+            height: 100%;
+            padding: 15px;
+            margin: auto;
+            
+        }
+        a:link {
+            color: #adb0ff;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #adb0ff;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #4fcddb;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:active {
+            color: #f57373;
+            background-color: transparent;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="Realviews">
+        <header>
+            <button class="TheSillyButtons TheSillierButtons" onclick="window.location = 'https://silvershorthair.github.io/'"><img src="Assets/back arrow.png" /> Back to home</button>
+            <br />
+            <center><img src="3D site logo (size fixed).png" alt="THE SILVER SHORTHAIR WEBSITE" style="width:600px; padding-bottom: 10px;"></center>
+        </header>
+        <center><h1>REVIEW SUBMISSION CENTER</h1></center>
+        <p>
+            The Silver Shorthair Website is critically acclaimed, with reviews from all across the globe, all saying that this is the go-to website for all of your internet needs,
+            and you think your measly, pathetic little review will be of any value to her? We're glad to hear that, in order to make a review, please read the required information
+            for your review, fill it out in the text box, and submit. Depending on the quality of your review, Silver may add it to the reviews section.
+            </p>
+        <h2>How do I write a review?</h2>
+        <p>
+        For your review, you'll need the following:
+        <ul>
+            <li>The review's content itself. Depending on your review, we may omit certain details such as vulgarity, personal information, or questioning of Silver's motives.</li>
+            <li>A name. You can pick any variety of name, including remaining anonymous. You can also claim to be a government official or organization, such as a current or former President of the United States,
+            the company McDonald's, etc. As we have no way to verify these claims, we will likely just assume they are true.</li>
+            <li>The year the review was written. Similarly to claiming to be a government official, we have no way of verifying this claim, and likewise we will also likely assume it to be true.</li>
+            <li>A link for your name to lead to. You can make this any link, such as a link to a personal social media, a link to an amusing video of a cat, etc.</li>
+        </ul>
+            And it's as simple as that. When you're done, your review should look something like this:<br /><br />
+            <div class="Real">
+                            <blockquote cite="Flippityjibbet">
+                Greetings fellow cyber citizens! After a long day of surfing the web (The WORLD-WIDE WEB, that is!) you may find yourself weary from your travels. From cat videos to the rugged terrain<br />of MySpace, sometimes the internet can just be too much. Why not, instead relax on the Silver Shorthair website? Indeed, this is the perfect place for a good cyber citizen to take a nice rest.<br />Shoot the breeze, update your silvers, sell your soul to a paper cat, and overall just have a great time! Farewell, and surf on!
+            </blockquote>
+            <i>- <a href="https://www.youtube.com/channel/UC8h6GI87bk7T2Pwk-u3eixw">Flippity "Fiddlesticks" Jibbet</a>, 2004</i><br>
+            </div><br />
+            Now of course, writing a review is quite the responsibility, and you may not get it right the first time. That may give you the desire to try again,
+            but we are legally required to inform you that we do not endorse writing multiple reviews, as that may mislead the shareholders.
+            On an unrelated note, however, here is an interesting fun fact: there is nothing technically stopping you from making multiple reviews,
+            and neither we nor the shareholders have any way of knowing if you have. We hope you enjoyed this unrelated fun fact.
+        <h2>When will my review arrive on the site?</h2>
+            Unfortunately, there is no way for you to know exactly when your review has arrived. Typically, reviews are added when the site is updated.
+            There is also the chance your review may never get added. You will know this if the site gets updated after your submission and your review is not included.
+            There could be any variety of reasons your review was not included, and unfortunately we do not provide feedback at this time. Please do not spam reviews.
+            <h2>So what are you waiting for? Submit your review now!</h2>
+            </p>
+            <form action="">
+                <p><label for="aaaaaaa">Enter your review here:</label></p>
+                <textarea id="reviews" name="reviews" rows="6" cols="100"></textarea><br />
+                <input type="checkbox" id="agree1" name="agree1" value="agree" checked disabled/>
+                <label for="agree1">I would like to give Silver Shorthair all rights to my immortal soul</label><br /><br />
+            </form>
+        <button id="buttonyes" onclick="sendMessage()">Submit</button>
+        <footer>
+            <br /><br /><br /><br /><br />
+            <p style="text-align:center; font-size:15px;">&#169; AD 33 - 9999999 Silver Shorthair. all rights reserved</p>
+            <p style="text-align:center; font-size:15px;">"A4 sheet of paper with a fold in the corner" is a registered trademark of <a href="miastonished.github.io">Mia</a></p>
+        </footer>
+    </div>
+    <script>
+        var youdidit = document.getElementById("reviews").value;
+        console.log("silly");
+        function sendMessage() {
+            const request = new XMLHttpRequest();
+            request.open("POST", "https://discord.com/api/webhooks/1065877744828809286/y2vZxUDbSkWDZCq8syevFnI-vJMB_czEFQ8cc7lvUAFXcs3zKPFmWONyNzD0nOyprqZn");
+
+            request.setRequestHeader('Content-type', 'application/json');
+
+            const params = {
+                username: "Review Submission Bot",
+                avatar_url: "",
+                content: youdidit
+            }
+            request.send(JSON.stringify(params));
+            {
+                document.getElementById("buttonyes").disabled = true;
+            }
+        }
+        console.log("silly");
+    </script>
+</body>
+</html>
