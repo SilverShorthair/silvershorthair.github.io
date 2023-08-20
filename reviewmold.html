@@ -58,7 +58,7 @@
             <br />
             <center><img src="3D site logo (size fixed).png" alt="THE SILVER SHORTHAIR WEBSITE" style="width:600px; padding-bottom: 10px;"></center>
         </header>
-        <center><h1>REVIEW SUBMISSION CENTE<a href="https://miastonished.github.io/newcode.html" style="text-decoration:none;color:#000!important">R</a></h1></center>
+        <center><h1>REVIEW SUBMISSION CENTER</h1></center>
         <p>
             The Silver Shorthair Website is critically acclaimed, with reviews from all across the globe, all saying that this is the go-to website for all of your internet needs,
             and you think your measly, pathetic little review will be of any value to her? We're glad to hear that, in order to make a review, please read the required information
@@ -102,24 +102,22 @@
         <footer>
             <br /><br /><br /><br /><br />
             <p style="text-align:center; font-size:15px;">&#169; AD 33 - 9999999 Silver Shorthair. all rights reserved</p>
-            <p style="text-align:center; font-size:15px;">"A4 sheet of paper with a fold in the corner" is a registered trademark of <a href="https://miastonished.github.io">Mia</a></p>
+            <p style="text-align:center; font-size:15px;">"A4 sheet of paper with a fold in the corner" is a registered trademark of <a href="miastonished.github.io">Mia</a></p>
         </footer>
     </div>
     <script>
+        var youdidit = document.getElementById("reviews").value;
         console.log("silly");
-        var mia = "https://discord.com/api/web"
-        var is = "hooks/1084695151911383040/-dtwDI"
-        var epic = "3RVXtqzpmxZzrbuttTIxAQ5eLXV"
         function sendMessage() {
             const request = new XMLHttpRequest();
-            request.open("POST", mia+is+epic+"XLN7wicoWcgY9upiRaD9DWXU3WYWLVXCbW4");
+            request.open("POST", "");
 
             request.setRequestHeader('Content-type', 'application/json');
 
             const params = {
                 username: "Review Submission Bot",
                 avatar_url: "",
-                content: document.getElementById("reviews").value
+                content: youdidit
             }
             request.send(JSON.stringify(params));
             {

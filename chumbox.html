@@ -1,27 +1,27 @@
 ﻿<!DOCTYPE html>
 <style>
     a:link {
-        color: #adb0ff;
+        color: #8b8b8b;
         background-color: transparent;
         text-decoration: none;
     }
 
     a:visited {
-        color: #adb0ff;
+        color: #8b8b8b;
         background-color: transparent;
         text-decoration: none;
     }
 
     a:hover {
-        color: #4fcddb;
+        color: #aaaaaa;
         background-color: transparent;
-        text-decoration: none;
+        text-decoration: underline;
     }
 
     a:active {
-        color: #f57373;
+        color: #585858;
         background-color: transparent;
-        text-decoration: none;
+        text-decoration: underline;
     }
     html {
 
@@ -101,23 +101,6 @@
     <title></title>
 </head>
 <body>
-    <div class="Newsreal">
-        <header><img src="SNNew.png" height="110px"> Real Information, real stories, real weather, real politics, all delivered to you by real Silvers</header>
-        <section class="section">
-            <button class="newsbuttons">Politics</button><br>
-            <button class="newsbuttons">Opinions</button><br><p style="font-size: 1px;"></p>
-            <button class="newsbuttons">News</button><br>
-            <button class="newsbuttons">Business</button><br><p style="font-size: 1px;"></p>
-            <button class="newsbuttons">Entertainment</button><br>
-            <button class="newsbuttons">Entertainment</button><br><p style="font-size: 1px;"></p>
-            <button class="newsbuttons">Entertainment</button><br>
-            <button class="newsbuttons">Entertainment</button><br><p style="font-size: 1px;"></p>
-            <button class="newsbuttons">Entertainment</button><br>
-            <button class="newsbuttons">Entertainment</button><br><p style="font-size: 1px;"></p>
-            <button class="newsbuttons">Entertainment</button><br>
-            <button class="newsbuttons">Entertainment</button><br><p style="font-size: 1px;"></p>
-        </section>
-    </div>
     <div class="box">
         <div class="chum">
             <div id="Chum1"></div>
@@ -126,40 +109,50 @@
             <div id="Chum2"></div>
         </div>
         <div class="chum">
-            <b style="margin-left: 58%; color: #8b8b8b;">Sponsored Links</b>
+            <b style="margin-left: 58%; color: #8b8b8b;"><a href="https://silvershorthair.github.io/chumboxinfo.html" target="_parent">Sponsored Links</a></b>
             <div id="Chum3"></div>
         </div>
     </div>
-<br /><br />
-        <a href="https://www.youtube.com/channel/UC45o_V6IbtkQI4_Aj65mNYQ" target="_blank"><img src="Ads/QuerkyAd.png" style="" height=180></a>
-        This is just going to be here for now
-        <br /><br />
 <script>
-const redirects = [
-    `<img src="Ads/Chum/Found.png" class="center" />
+let redirects = [
+    `<img src="Ads/Chum/Found.png" alt="Several Silvers floating in blood on the microscopic level." class="center" />
     <p class="center"><b>She Thought He Just Had The Flu, But When She Got A Blood Test, The Doctor Burst Into Tears</b><br /><b style="color: #8b8b8b; ">SNN</b></p >`,
-    `<img src="Ads/Chum/Menplaceholder.png" class="center" />
-    <p class="center"><b>How Accepting The Funny Man Into Your Life Can Help You Grow Stronger<br /></b><br /><b style="color: #8b8b8b; ">COTFM</b></p >`,
-  `<img src="Ads/Chum/Skyplaceholder.png" class="center" />
-            <p class="center"><b>breakign nerws blue humanoid alien thing spotted in {userlocation}<br /></b><br /><b style="color: #8b8b8b; ">SNN</b></p>`,
-  `<img src="Ads/Chum/undefined.png" class="center" />
-            <p class="center"><b>For whatever matters most, make it easier for potential customers to find your busine</b><br /><b style="color: #8b8b8b; ">ads.google.com/home/</b></p>`,
-    `<img src="Ads/Chum/fuck.png" class="center" />
-    <p class="center"><b>Top 10 Hidden Video Game Endings the Developers did NOT Want ANYBODY to see</b><br /><b style="color: #8b8b8b; ">SNN</b></p >`
+//    `<img src="Ads/Chum/Menplaceholder.png" class="center" />
+//    <p class="center"><b>How Accepting The Funny Man Into Your Life Can Help You Grow Stronger<br /></b><br /><b style="color: #8b8b8b; ">COTFM</b></p >`,
+//  `<img src="Ads/Chum/Skyplaceholder.png" class="center" />
+//            <p class="center"><b>breakign nerws blue humanoid alien thing spotted in {userlocation}<br /></b><br /><b style="color: #8b8b8b; ">SNN</b></p>`,
+//  `<img src="Ads/Chum/undefined.png" class="center" />
+//            <p class="center"><b>For whatever matters most, make it easier for potential customers to find your business with Google Ads.<br></b><b style="color: #8b8b8b; ">ads.google.com/home/</b></p>`,
+    `<img src="Ads/Chum/fuck.png" alt="A photo from the game Find the Silvers, with a red circle around an angry-looking Silver, who has a speech bubble with the word 'FUCK' (with the UCK being censored)." class="center" />
+    <p class="center"><b>Top 10 Hidden Video Game Endings the Developers did NOT Want ANYBODY to see</b><br /><b style="color: #8b8b8b; ">SNN</b></p >`,
+    `<img src="Ads/Chum/deadquiz.png" alt="Text reading 'AM I DEAD QUIZ' in front of an upside down cross and ???." class="center" />
+    <p class="center"><b>This AI Quiz Reveals If You're Still Alive! Most FAIL!</b><br><br /><b style="color: #8b8b8b; ">QUIZTEST.ME</b></p >`,
+    `<img src="Ads/Chum/lonelysouls.png" alt="3 souls floating in a garden." class="center" />
+    <p class="center"><b>Hot Local Souls Want Your Body, Click Here to Find Out More</b><br><br /><b style="color: #8b8b8b; ">localhost</b></p >`,
+    `<img src="Ads/Chum/hell.png" alt="A photo of Find the Silvers with a miscolored background, featuring the following characters: Huggy Wuggy from Poppy Playtime, Ben from Talking Tom, the logo for Grand Theft Auto 5, the icon for My Singing Monsters, a red crewmate from Among Us making the 'shh' expression, Steve from Minecraft, The Neighbor from Hello Neighbor, a soldier from Call of Duty, and Red from Angry Birds." class="center" />
+    <p class="center"><b>Try Find the Silvers FREE ONLINE TODAY - FREE ONLINE GAMES</b><br><br /><b style="color: #8b8b8b; ">FREE GAMES ONLINE - PLAY NOW AT...</b></p >`,
+        `<img src="Ads/Chum/Nikola.png" alt="A photo of Nikola Tesla standing in front of an old drawing meant to represent a background, with a speech bubble saying 'Dunktastic!' and a caption at the bottom saying 'What did he know??'." class="center" />
+    <p class="center"><b>Nikola Tesla's Last Words Revealed - And What He Said Will Shock you</b><br><br /><b style="color: #8b8b8b; ">SNN</b></p >`
 ];
 min = Math.ceil(0);
-max = Math.floor(5);
+max = Math.floor(redirects.length);
     chumbr1 = Math.floor(Math.random() * (max - min) + min);
     repl1 = redirects[chumbr1];
+//    redirects = redirects.splice(redirects.indexOf(chumbr1), 1);
     document.getElementById("Chum1").innerHTML = repl1;
 
+    max = Math.floor(redirects.length);
     chumbr2 = Math.floor(Math.random() * (max - min) + min);
     repl2 = redirects[chumbr2];
+//    redirects = redirects.splice(redirects.indexOf(chumbr2), 1);
     document.getElementById("Chum2").innerHTML = repl2;
 
+    max = Math.floor(redirects.length);
     chumbr3 = Math.floor(Math.random() * (max - min) + min);
     repl3 = redirects[chumbr3];
+//    redirects = redirects.splice(redirects.indexOf(chumbr3), 1);
     document.getElementById("Chum3").innerHTML = repl3;
+
 
     let text;
     if (Math.random() < 0.1) {
