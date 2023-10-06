@@ -66,6 +66,11 @@ h1 {
     vertical-align: middle;
 }
 
+panel > img {
+    width: 88px;
+    height: 3000px;
+}
+
 
 /* buttons */
 
@@ -153,7 +158,23 @@ h1 {
     padding: 5px 10px;
     margin: auto;
     border: outset #120039 8px;
+    transition: 500ms;
 }
+
+    .Panel:has(.miabutton:hover) {
+        background-color: #bc0202;
+        border: outset #800000 8px;
+    }
+
+    .Panel:has(.vaebutton:hover) {
+        background-color: #171717;
+        border: outset #8e630c 8px;
+    }
+
+    .Panel:has(.skybutton:hover) {
+        background-color: #0064af;
+        border: outset #00ffff 8px;
+    }
 
 .flexcontainer {
     display: flex;
