@@ -139,6 +139,67 @@ panel > img {
     transform: translateY(4px);
 }
 
+.WebringButtonLeft {
+    background-color: #120039;
+    border: solid #0c0026 2.5px;
+    margin: 5px;
+    padding: 3px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 5px 5px;
+    cursor: pointer;
+    box-shadow: 0 8px #0c0026;
+}
+
+.WebringButtonLeft:hover {
+    color: aqua;
+    background-color: #0d002a;
+    border: solid #070015 2.5px;
+    box-shadow: 0 8px #070015;
+}
+
+.WebringButtonLeft:active {
+    background-color: #000000;
+    border: solid #414141 2.5px;
+    box-shadow: 0 4px #414141;
+    transform: translateY(4px);
+}
+
+.WebringButtonRight {
+    background-color: #120039;
+    border: solid #0c0026 2.5px;
+    margin: 5px;
+    padding: 3px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 5px 5px;
+    cursor: pointer;
+    box-shadow: 0 8px #0c0026;
+}
+
+.WebringButtonRight:hover {
+    color: aqua;
+    background-color: #0d002a;
+    border: solid #070015 2.5px;
+    box-shadow: 0 8px #070015;
+}
+
+
+.WebringButtonRight:active {
+    background-color: #0064af;
+    border: solid #00ffff 2.5px;
+    box-shadow: 0 4px #00ffff;
+    transform: translateY(4px);
+}
+
 /* divs */
 
 .Real {
@@ -154,11 +215,19 @@ panel > img {
     background-color: #120039;
     color: white;
     width: 352px;
-    height: 40%;
+    height: min-content;
     padding: 5px 10px;
     margin: auto;
     border: outset #120039 8px;
     transition: 500ms;
+}
+
+.vertical-center {
+    margin:0;
+    position:absolute;
+    top:50%;
+    -ms-transform:translateY(-50%);
+    transform:translateY(50%);
 }
 
     .Panel:has(.miabutton:hover) {
@@ -174,6 +243,10 @@ panel > img {
     .Panel:has(.skybutton:hover) {
         background-color: #0064af;
         border: outset #00ffff 8px;
+    }
+    .Panel:has(.gumibutton:hover) {
+        background-color: #f06292;
+        border: outset #eb144c 8px;
     }
 
 .flexcontainer {
