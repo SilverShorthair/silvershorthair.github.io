@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="description" content="Looking to make an ad for the chumbox? Here's the place to start.">
+    <link rel="icon" type="image/x-icon" href="Favicons/PopupSilver.png">
+    <link rel="stylesheet" href="stylish.css">
+    <meta charset="utf-8" />
+    <title>Chumbox Ad Generator</title>
+    <style>
+        .TheSillyButtonsOverride {
+            background-color: #131b37;
+            background-image: linear-gradient(#13a1b37, #2c315e, #131b37);
+            color: white;
+            border: solid #1c2140 2.5px;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 5px 20px;
+            cursor: pointer;
+            box-shadow: 0 8px #2c315e;
+        }
+
+        .TheSillierButtonsOverride {
+            background-image: linear-gradient(#131b37, #2c315e, #131b37);
+        }
+
+        .chum {
+            background-color: #e4e4e4;
+            color: black;
+            width: 300px;
+            padding: 0px;
+            font-family: Arial;
+            font-size: 15px;
+            display: inline-block;
+        }
+
+        .box {
+            background-color: #e4e4e4;
+            color: black;
+            width: 300px;
+            padding: 0px;
+            border: 5px solid #e4e4e4;
+            font-family: Arial;
+            font-size: 15px;
+            overflow-y: hidden;
+            overflow-x: auto;
+            float: right;
+        }
+
+        .center {
+            margin: auto;
+        }
+
+        .embedfield {
+            width: 80px;
+            padding: 4px;
+            background-color: #25294b;
+            color: #ffffff;
+            border: #2c315e;
+            box-shadow: 0 3px #2c315e;
+        }
+
+        .textareastyle {
+            padding: 4px;
+            background-color: #25294b;
+            color: #ffffff;
+            border: #2c315e;
+            box-shadow: 0 3px #2c315e;
+        }
+
+        /*@keyframes gbuttonh {
+             0% {transform: translateY(0%);}
+            25% {transform: translateY(12%);}
+            50% {transform: translateY(15%);}
+            75% {transform: translateY(12%);}
+           100% {transform: scale(2000%);}
+        }*/
+
+        .generate {
+        font-weight: bold;
+        padding: 10px;
+        background-color: #30a700;
+        background-image: linear-gradient(-15deg, #30a700, #78e94a, #ffffff);
+        color: #ffffff;
+        border: 4px ridge #d5d5d5;
+        border-radius: 25px;
+        box-shadow: 3px 3px 10px #000000;
+        }
+
+        .generate:hover {
+            background-color: #30a700;
+            background-image: linear-gradient(-15deg, #1f6d00, #67c242, #75d34f, #ffffff);
+            color: #ffffff;
+            border: 4px ridge #b7b7b7;
+            border-radius: 25px;
+        }
+
+        .generate:active {
+            background-color: #30a700;
+            background-image: linear-gradient(-15deg, #1f6d00, #4d982f, #62b640, #69bd47, #ffffff);
+            color: #ffffff;
+            border: 4px ridge #9f9f9f;
+            border-radius: 25px;
+            transform: translateY(4%);
+        }
+
+        .embedcopy:hover {
+        background-color: #0a0d1d;
+        box-shadow: 0 8px #1b1f3c;
+        }
+
+        .embedcopy:active {
+        background-color: #04060d;
+        box-shadow: 0 4px #14172c;
+        transform: translateY(4px);
+        }
+
+        .ChumReal {
+            background-color: #160045;
+            color: white;
+            width: 1280px;
+            height: 100%;
+            padding: 15px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="ChumReal">
+        <header>
+            <br />
+            <div>
+                <img src="modern site logo.png" alt="THE SILVER SHORTHAIR WEBSITE" style="width:450px; padding-bottom: 10px;padding-left: 10px;">
+                <button class="TheSillyButtonsOverride TheSillierButtonsOverride" onclick="window.location = 'https://silvershorthair.github.io/'"><img src="Favicons/SmallSilver.png" /> Homepage</button>
+                <button class="TheSillyButtonsOverride TheSillierButtonsOverride" onclick="window.location = 'https://silvershorthair.github.io/portfolio/index.html'"><img src="Favicons/UnemployedSilver.png" /> Portfolio</button>
+                <button class="TheSillyButtonsOverride TheSillierButtonsOverride" onclick="window.location = 'https://silvershorthair.github.io/ChangeLog'"><img src="Favicons/WrittenSilver.png" />Change Log</button>
+                <button class="TheSillyButtonsOverride TheSillierButtonsOverride" onclick="window.location = 'https://silvershorthair.github.io/AboutMe'"><img src="Favicons/AboutSilver.png" />About Me</button>
+            </div>
+            <br />
+        </header><br>
+        <label for="cN">Ad name (internal):</label><br><br>
+        <input type="text" class="embedfield" autocomplete="off" id="cN"><br><br>
+        <label for="cI">Image (must be 300x250):</label><br><br>
+        <input type="file" autocomplete="off" id="cI" oninput="previewImg()">
+        <div class="box">
+            <div class="chum">
+                <img src="Ads/Chum/condemned.jpg" alt="An image of a grocery store shelf with the text 'Property Condemnation Sale!' over it. the shelf contains (left to right) a glowing piece of broccoli, four eggs, Mickey Mouse from Steamboat Willie, a toaster, and a human skull." id="cbimg" class="center" title="While not explicitly required, public domain images can be a pretty helpful tool. All of the images used in this ad (besides the toaster, which was made by me) are public domain images found on Commons Wikimedia." />
+                <p class="center"><b id="line1" title="Ad text content must be at most 3 lines, but if you're under that, add in a <br> element for however many lines you're missing.">Hot Sale! All items 75% off! Buy now! Everything must go! Everything Must go! Everything must go! Everything must go!</b><br /><b style="color: #8b8b8b" id="provider" title="This advice applies to every element, but if you're having trouble coming up with ideas, look to real chumbox ads for inspiration. You can find them on a variety of sites, and Wikipedia lists 'CNN, Fox News, MSNBC, and USA Today' as examples.">YourName.com</b></p>
+            </div>
+        </div><br><br>
+        <label for="cA">Image alt text:</label><br><br>
+        <textarea class="textareastyle" rows="2" cols="36" autocomplete="off" id="cA"></textarea><br><br>
+        <label for="cT1">Ad contents:</label><br><br>
+        <textarea class="textareastyle" rows="2" cols="36" autocomplete="off" id="cT1" oninput="previewTxt('cT1', 'line1')"></textarea><br><br>
+        <label for="cC">Ad provider:</label><br><br>
+        <input type="text" class="embedfield" autocomplete="off" id="cC" oninput="previewTxt('cC', 'provider')">
+        <br /><br />
+        <input id="cS" class="generate" type="submit" value="GENERATE & COPY" autocomplete="off" onclick="chumgen(); clipboard()"><br><br>
+        <br />
+        <textarea class="textareastyle" autocomplete="off" value="" readonly id="chumoutput"></textarea><br><br>
+        <br />
+        <footer>
+            
+            <p style="text-align:center; font-size:15px;">&#169; AD 33 - 9999999 Silver Shorthair. all rights reserved</p>
+            <p style="text-align:center; font-size:15px;">"A4 sheet of paper with a fold in the corner" is a registered trademark of <a href="miastonished.github.io">Mia</a></p><br>
+        </footer>
+    </div>
+</body>
+</html>
+<script>
+
+    var li
+
+        function chumgen() {
+        let c = document.getElementById("cN").value
+        let x = li
+        let y = document.getElementById("cA").value
+        let z = document.getElementById("cT1").value
+        let a = document.getElementById("cC").value
+        let b = `
+    '${c}': {
+        adImg: "Ads/Chum/${x}",
+        adAlt: "${y}",
+        adDesc: "${z}",
+        adSrc: "${a}",
+    },
+`
+
+        document.getElementById("chumoutput").value = b;
+    }
+
+    function clipboard() {
+        var copyText = document.getElementById("chumoutput");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+        navigator.clipboard.writeText(copyText.value);
+    }
+
+    function previewTxt(e, r) {
+//        const file = document.querySelector("input[type=file]").files[0]; //the image file
+//        const reader = new FileReader(); //contains the fileReader function
+//        reader.addEventListener("load", () => {document.getElementById("cbimg").src = reader.result;},false,);
+//        if (file) {reader.readAsDataURL(file);}
+//        let a = document.getElementById("cI").value
+//        document.getElementById("cbimg").src = a
+        let x = document.getElementById(e).value
+        document.getElementById(r).innerHTML = x
+//        let b = document.getElementById("cC").value
+//        document.getElementById("Provider").innerHTML = b
+    }
+
+    function previewImg() {
+//        const preview = document.getElementById("cbimg"); //the image preview location
+        const file = document.querySelector("input[type=file]").files[0]; //the image file
+        const reader = new FileReader(); //contains the fileReader function
+
+        //prepares a listener for when the load event is fired
+        reader.addEventListener(
+            "load",
+            () => {
+                //when the load event is fired, set the source for the image preview to result.
+                document.getElementById("cbimg").src = reader.result;
+            },
+            false,
+        );
+        //if there is a file, read it. readAsDataURL seemingly tells result to encode the image file in base64. This also fires the load event, causing the listener to be notified
+        if (file) {
+            reader.readAsDataURL(file);
+        }
+    }
+
+    const filepicker = document.getElementById("cI");
+    filepicker.addEventListener("change", (event) => {
+        const files = event.target.files;
+
+        for (const file of files) {
+            li = file.name;
+        }
+    });
+
+//This stuff down here is for getting the name of the file. We were trying to figure out what exactly everything does so that we could scavenge the code for parts and get
+//rid of all the stuff we don't need. Here's some links:
+// https://developer.mozilla.org/en-US/docs/Web/API/File/name
+// https://developer.mozilla.org/en-US/docs/Web/API/Event/target
+// https://developer.mozilla.org/en-US/docs/Web/API/EventTarget
+
+
+</script>

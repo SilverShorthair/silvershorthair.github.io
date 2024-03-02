@@ -250,6 +250,10 @@ panel > img {
         background-color: #f06292;
         border: outset #eb144c 8px;
     }
+    .Panel:has(.jembutton:hover) {
+        background-color: #43aaff;
+        border: outset #ff6aee 8px;
+    }
 
 .flexcontainer {
     display: flex;
