@@ -8,24 +8,26 @@
     <meta charset="utf-8" />
     <title>Chumbox Ad Generator</title>
     <style>
+        body {
+            background-image:url("Assets/Background corp.png");
+        }
+
+        a:link {
+            color:#2ea100;
+            text-decoration: underline;
+        }
+
         .TheSillyButtonsOverride {
-            background-color: #131b37;
-            background-image: linear-gradient(#13a1b37, #2c315e, #131b37);
+            background-color: #868686;
+            border: 1px solid #868686;
             color: white;
-            border: solid #1c2140 2.5px;
-            margin: 5px;
-            padding: 10px;
+            padding: 3px 15px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
             font-size: 20px;
-            margin: 5px 20px;
+            margin: 5px 2px;
             cursor: pointer;
-            box-shadow: 0 8px #2c315e;
-        }
-
-        .TheSillierButtonsOverride {
-            background-image: linear-gradient(#131b37, #2c315e, #131b37);
         }
 
         .chum {
@@ -58,18 +60,18 @@
         .embedfield {
             width: 80px;
             padding: 4px;
-            background-color: #25294b;
+            background-color: #868686;
             color: #ffffff;
             border: #2c315e;
-            box-shadow: 0 3px #2c315e;
+            box-shadow: 0 3px #5e5e5e;
         }
 
         .textareastyle {
             padding: 4px;
-            background-color: #25294b;
+            background-color: #868686;
             color: #ffffff;
             border: #2c315e;
-            box-shadow: 0 3px #2c315e;
+            box-shadow: 0 3px #5e5e5e;
         }
 
         /*@keyframes gbuttonh {
@@ -120,31 +122,27 @@
         }
 
         .ChumReal {
-            background-color: #160045;
-            color: white;
+            background-color: #d1d1d1;
+            color: black;
             width: 1280px;
             height: 100%;
             padding: 15px;
-            padding-top: 0px;
-            padding-bottom: 0px;
+            padding-top: 15px;
+            padding-bottom: 1px;
             margin: auto;
         }
 
     </style>
 </head>
 <body>
+        <div style="width:1280px;margin:auto;">
+            <img src="Assets/corporate logo.png" alt="A small image of a man pushing the Blue Egg up a hill, with text next to it that says 'SILVER SHORTHAIR Official website.'" style="padding-bottom: 10px;padding-top:10px;"><br />
+            <button class="TheSillyButtonsOverride TheSillierButtonsOverride" onclick="window.location = 'index.html'">Homepage</button>
+            <button class="TheSillyButtonsOverride TheSillierButtonsOverride" onclick="window.location = 'portfolio/index.html'">Portfolio</button>
+            <button class="TheSillyButtonsOverride TheSillierButtonsOverride" onclick="window.location = 'ChangeLog.html'">Change Log</button>
+            <button class="TheSillyButtonsOverride TheSillierButtonsOverride" onclick="window.location = 'AboutMe.html'">About Me</button>
+        </div>
     <div class="ChumReal">
-        <header>
-            <br />
-            <div>
-                <img src="modern site logo.png" alt="THE SILVER SHORTHAIR WEBSITE" style="width:450px; padding-bottom: 10px;padding-left: 10px;">
-                <button class="TheSillyButtonsOverride TheSillierButtonsOverride" onclick="window.location = 'https://silvershorthair.github.io/'"><img src="Favicons/SmallSilver.png" /> Homepage</button>
-                <button class="TheSillyButtonsOverride TheSillierButtonsOverride" onclick="window.location = 'https://silvershorthair.github.io/portfolio/index.html'"><img src="Favicons/UnemployedSilver.png" /> Portfolio</button>
-                <button class="TheSillyButtonsOverride TheSillierButtonsOverride" onclick="window.location = 'https://silvershorthair.github.io/ChangeLog'"><img src="Favicons/WrittenSilver.png" />Change Log</button>
-                <button class="TheSillyButtonsOverride TheSillierButtonsOverride" onclick="window.location = 'https://silvershorthair.github.io/AboutMe'"><img src="Favicons/AboutSilver.png" />About Me</button>
-            </div>
-            <br />
-        </header><br>
         <label for="cN">Ad name (internal):</label><br><br>
         <input type="text" class="embedfield" autocomplete="off" id="cN"><br><br>
         <label for="cI">Image (must be 300x250):</label><br><br>
@@ -164,13 +162,10 @@
         <br /><br />
         <input id="cS" class="generate" type="submit" value="GENERATE & COPY" autocomplete="off" onclick="chumgen(); clipboard()"><br><br>
         <br />
-        <textarea class="textareastyle" autocomplete="off" value="" readonly id="chumoutput"></textarea><br><br>
+        <textarea class="textareastyle" autocomplete="off" value="" readonly id="chumoutput"></textarea><br>
         <br />
-        <footer>
-            
             <p style="text-align:center; font-size:15px;">&#169; AD 33 - 9999999 Silver Shorthair. all rights reserved</p>
-            <p style="text-align:center; font-size:15px;">"A4 sheet of paper with a fold in the corner" is a registered trademark of <a href="miastonished.github.io">Mia</a></p><br>
-        </footer>
+            <p style="text-align:center; font-size:15px;">"A4 sheet of paper with a fold in the corner" is a registered trademark of <a href="miastonished.github.io">Mia</a></p>
     </div>
 </body>
 </html>

@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<style>
+    .TheSillyButtonsOverride {
+        background-color: #131b37;
+        background-image: linear-gradient(#13a1b37, #2c315e, #131b37);
+        color: white;
+        border: solid #1c2140 2.5px;
+        margin: 5px;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 5px 20px;
+        cursor: pointer;
+        box-shadow: 0 8px #2c315e;
+    }
+
+    .TheSillierButtonsOverride {
+        background-image: linear-gradient(#131b37, #2c315e, #131b37);
+    }
+
+    .TheSillierButtonsOverride:hover {
+        background-image: linear-gradient(#0a0d1d, #25294b, #0a0d1d);
+        box-shadow: 0 8px #1b1f3c;
+    }
+
+    .TheSillyButtonsOverride:active {
+        background-image: linear-gradient(#04060d, #131524, #04060d);
+        box-shadow: 0 4px #14172c;
+        transform: translateY(4px);
+    }
+</style>
+<html lang="en">
+<head>
+    <title>Cookies</title>
+    <meta name="description" content="hi there EU please don't sue me uwu'">
+    <link rel="icon" type="image/x-icon" href="Favicons/Cookie.png">
+    <link rel="stylesheet" href="Stylish.css" />
+</head>
+<body>
+    <div class="Real">
+        <header>
+            <br />
+            <div>
+                <img src="modern site logo.png" alt="THE SILVER SHORTHAIR WEBSITE" style="width:450px; padding-bottom: 10px;padding-left: 10px;">
+                <button class="TheSillyButtonsOverride TheSillierButtonsOverride" onclick="window.location = 'index.html'"><img src="Favicons/SmallSilver.png" /> Homepage</button>
+                <button class="TheSillyButtonsOverride TheSillierButtonsOverride" onclick="window.location = 'portfolio/index.html'"><img src="Favicons/UnemployedSilver.png" /> Portfolio</button>
+                <button class="TheSillyButtonsOverride TheSillierButtonsOverride" onclick="window.location = 'ChangeLog.html'"><img src="Favicons/WrittenSilver.png" />Change Log</button>
+                <button class="TheSillyButtonsOverride TheSillierButtonsOverride" onclick="window.location = 'AboutMe.html'"><img src="Favicons/AboutSilver.png" />About Me</button>
+            </div>
+            <br /><br />
+        </header>
+        <!--content start-->
+        <h1>Cookies</h1>
+        <p>
+            Welcome to the cookies page. Now, I know cookies may sound scary, considering stupid corporations have done annoying things with them, and now the internet
+            is worse, but the cookies on my site are actually what they sound like in the sense that they're here to make the experience a little sweeter. Don't worry,
+            I haven't put any cookies onto your computer without your consent, it's up to you to pick the cookies you want. Currently the cookies are a WIP, so if you
+            enable them, you might need to come back here again when they're finished to update your preferences.
+        </p>
+        <!--<form>
+            <b style="font-size:25px;">Homepage theme</b><br />
+            <i style="color:#808080;">The homepage's active theme. Default means whatever I have the theme set to at the time (for example, the Christmas theme in December.).</i><br /><br />
+            <select id="theme">
+                <option value="0">Default</option>
+                <option value="1">Silver Standard</option>
+                <option value="2">Christmas</option>
+                <!--<option value="3">Halloween</option>
+            </select>
+        </form><br />
+        <form>-->
+            <!--<b style="font-size:25px;">Fun cookies</b><br />
+            <i style="color:#808080;">Allows the site to store information for fun stuff on secret pages. You'll be informed when a feature requires fun cookies.</i><br /><br />
+            <select id="fun" name="fun">
+                <option value="0">Disabled</option>
+                <option value="1">Enabled</option>
+            </select>
+        </form><br />
+        <form>
+            <b style="font-size:25px;">Bonus logos</b><br />
+            <i style="color:#808080;">Change the site logo on the homepage! If you disable fun cookies or clear your cookies you'll lose all of the bonus logos, and you'll lose access to this menu.</i><br /><br />
+                <select id="logo" name="logo">
+                <option value="default">Default (3D)</option>
+                <option value="0">3D</option>
+                <option value="1">3D 2003</option>
+                <option value="2">MS Paint</option>
+                <option value="3">The Rat</option>
+            </select>
+        </form>-->
+        <b style="font-size:25px;">Christmas Mode</b><br />
+        <br />
+        <button onclick="christmasmode()">Activate</button> <button onclick="cookiekill()">Deactivate</button>
+        <!--<button onclick="makecookies()">Apply</button> <button onclick="cookiekill()">Delete</button>-->
+        <!--content end-->
+        <footer>
+            <br /><br /><br /><br /><br /><br /><br /><br />
+            <p style="text-align:center; font-size:15px;">&#169; AD 33 - 9999999 Silver Shorthair. all rights reserved</p>
+            <p style="text-align:center; font-size:15px;">"A4 sheet of paper with a fold in the corner" is a registered trademark of <a href="miastonished.github.io">Mia</a></p><br />
+        </footer>
+</body>
+</html>
+<script>
+//    let x
+//    function makecookies() {
+//    x = document.getElementById("theme").value;
+//    document.cookie = `theme=${x}; expires=Tue, 31 Dec 2999 12:00:00 UTC`;
+//    }
+    function christmasmode() {
+        document.cookie = `theme=1; expires=Tue, 31 Dec 2999 12:00:00 UTC`;
+    }
+    
+    function cookiekill() {
+        document.cookie = "theme=0; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+    }
+</script>

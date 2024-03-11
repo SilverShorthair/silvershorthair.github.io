@@ -254,14 +254,6 @@ panel > img {
         background-color: #43aaff;
         border: outset #ff6aee 8px;
     }
-    .Panel:has(.xzanbutton:hover) {
-        background-color: #ff9f40;
-        border: outset #b93cc9 8px;
-    }
-    .Panel:has(.bugsbutton:hover) {
-        background-color: #28dc16;
-        border: outset #0a32b4 8px;
-    }
 
 .flexcontainer {
     display: flex;
