@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<style>
+
+    body {
+        font-family: Tahoma;
+        background: #008080;
+    }
+
+    .steal {
+        background-color: #4c5844;
+        color: white;
+        height: 100%;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin: auto;
+        border: #808080 2px outset;
+        box-shadow: 0px 0px 2px #000000;
+    }
+
+    .realsteal {
+        background: #3e4637;
+        padding: 5px;
+        box-shadow: 0px 0px 4px inset #000000;
+    }
+
+
+    .TheSteamButtons {
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin: 1px;
+        background-color: #4c5844;
+        color: #ffffff;
+        border: #808080 1px outset;
+        box-shadow: 0px 0px 2px #000000;
+        text-align: left;
+    }
+
+        .TheSteamButtons:active {
+            background-color: #485340;
+            color: #ffffff;
+            border: #717171 1px inset;
+            box-shadow: 0px 0px 2px #000000;
+            color: #c2b34f;
+        }
+
+    .TheSteamButtonsActive {
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin: 10px;
+        background-color: #485340;
+        color: #ffffff;
+        border: #717171 1px inset;
+        box-shadow: 0px 0px 2px #000000;
+        color: #c2b34f;
+    }
+
+    .display {
+        background-color:#494e49;
+        border: 5px outset grey;
+        width:70%;
+        padding:5px;
+    }
+
+    .flexcontainer {
+        display: flex;
+    }
+
+    .downloadbutton {
+        padding: 8px;
+        margin: 10px;
+        background-color: #2A475E;
+        color: #ffffff;
+        border: #2A475E outset;
+    }
+
+    .downloadbutton:active {
+        padding: 8px;
+        margin: 10px;
+        background-color: #244157;
+        color: #ffffff;
+        border: #244157 inset;
+    }
+
+    .downloadbuttonactive {
+        padding: 8px;
+        margin: 10px;
+        background-color: #244157;
+        color: #ffffff;
+        border: #244157 inset;
+    }
+
+    .TopText {
+        font-size: 13px;
+        margin: 8px;
+        margin-left: 4px;
+        /*cursor: pointer;*/
+        cursor:none;
+        color:#878787;
+    }
+
+    .downloadbardivider {
+        background-image: linear-gradient(90deg, #b0a348 70%, #383f31 0);
+        height: 3px;
+        margin: auto;
+        width: 70%;
+        box-shadow: 0px 0px 1px #000000 inset;
+        border: 1px #383f31 inset;
+    }
+
+
+
+</style>
+<html lang="en">
+<head>
+    <title>Downloads</title>
+    <meta name="description" content="Stuff I've made that you can get.">
+    <link rel="icon" type="image/x-icon" href="Favicons/DownloadSilver.png">
+</head>
+<body>
+    <div class="steal" style="padding-top: 5px;">
+        <div class="steader">
+            <div style="display:flex;">
+                <span style="font-size: 14px;cursor:default;"><img src="Assets/steamicon.ico" alt="Small paper cat icon" class="CrispPixels">Silver</span> <span style="margin-left:auto;"><button class="TheSteamButtons" onclick="window.location = 'edits.html'">_</button><button class="TheSteamButtons" style="margin-left:2px;">□</button><button class="TheSteamButtons" style="margin-left:2px;" onclick="window.location = 'edits.html'">X</button></span>
+            </div>
+
+            <div style="display:flex;">
+                <div class="TopText">Sort By Site</div>
+                <div class="TopText">Sort By Date</div>
+                <div class="TopText" onclick="window.location = site" style="color:#ffffff;cursor:alias">Friends</div>
+                <div class="TopText">Sort By Game</div>
+                <div class="TopText">Advanced Filters</div>
+            </div>
+        </div>
+        <div class="steal">
+            <button class="TheSteamButtons" onclick="window.location = 'index.html'">Homepage</button>
+            <button class="TheSteamButtonsActive" onclick="window.location = 'downloads.html'">Downloads</button>
+            <button class="TheSteamButtons" onclick="window.location = 'ChangeLog.html'">Change Log</button>
+            <button class="TheSteamButtons" onclick="window.location = 'AboutMe.html'">About Me</button>
+            <div class="realsteal">
+                <!--content start-->
+                <div class="flexcontainer display">
+                    <div><img src="downloadicons/bigratprev.jpg" style="height: 256px; width: 256px; margin: 10px; border: 3px solid #232823" /></div>
+                    <div>
+                        <h1>Unreasonably Large Rat</h1>
+                        <span style="color:#a0b4a0;">
+                            For Cities: Skylines
+                        </span>
+                        <br /><br />
+                        Massive rat for your city. Put them wherever you want. Allow them to wreak havoc. Allow them to spread fear.
+                        <br /><br /><br />
+                        <button class="downloadbutton" onclick="window.location = 'https://steamcommunity.com/sharedfiles/filedetails/?id=3250493658'">Get on Steam Workshop</button>
+                    </div>
+                </div><br />
+                <div class="flexcontainer display">
+                    <div><img src="downloadicons/ratprev.jpg" style="height: 256px; width: 256px; margin: 10px; border: 3px solid #232823" /></div>
+                    <div>
+                        <h1>Rat</h1>
+                        <span style="color:#a0b4a0;">
+                            For Cities: Skylines
+                        </span>
+                        <br /><br />
+                        Do you think your alleyways are too devoid of life? Do you feel like the landfill could really use some inhabitants? Do you just like small rodents? If so, your city might really benefit from rat infestation.
+                        <br /><br /><br />
+                        <button class="downloadbutton" onclick="window.location = 'https://steamcommunity.com/sharedfiles/filedetails/?id=3255248774'">Get on Steam Workshop</button>
+                    </div>
+                </div><br />
+                <div class="flexcontainer display">
+                    <div><img src="downloadicons/supermarketprev.png" style="height: 256px; width: 256px; margin: 10px; border: 3px solid #232823" /></div>
+                    <div>
+                        <h1>dm_supermarket</h1>
+                        <span style="color:#a0b4a0;">
+                            For Half-Life
+                        </span>
+                        <br /><br />
+                        A lone supermarket stands in the middle of the desert, the only building for miles. Looks like the perfect place to have a deathmatch! Contains every weapon in Half-Life.
+                        <br /><br /><br />
+                        <button class="downloadbuttonactive" style="cursor:not-allowed"><img src="Assets/Alert.ico" /> Coming soon!</button>
+                    </div>
+                </div>
+            </div><br />
+            <span>
+                <br />
+                <p style="text-align: center; font-size: 14px; color:#8a9580;">&#169; AD 33 - 9999999 SILVER SHORTHAIR. ALL RIGHTS RESERVED</p>
+                <div class="downloadbardivider" />
+        </div>
+        <p style="text-align: center; color: #8a9580; font-size:14px;text-decoration: underline;">"A4 sheet of paper with a fold in the corner" is a registered trademark of <a href="miastonished.github.io" style="color: #8a9580; font-size: 14px; text-decoration: underline;">Mia</a></p><br />
+        </span>
+    </div>
+    <div>
+        <br />
+        <!--content end-->
+    </div>
+</body>
+</html>
+
+<script>
+    //thanks again for the core.html code Mia
+
+    const redirects = [
+    'https://miastonished.github.io',
+    'https://batashock.github.io',
+    'https://skysupercharged.github.io',
+    'https://vaelaris.github.io',
+    'https://garden.lgbt',
+    'https://jir0we.github.io',
+    'https://flower1221.neocities.org',
+    'https://hiyajemma.github.io',
+    'https://xzan-corvus.github.io',
+    'https://fabledbugs.github.io',
+    'https://wolfdragon245.github.io',
+    'https://commandtm.github.io'
+
+    ];
+    min = Math.ceil(0);
+    max = Math.floor(redirects.length);
+    rng = Math.floor(Math.random() * (max - min) + min);
+    site = redirects[rng];
+
+
+
+</script>

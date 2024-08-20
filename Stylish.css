@@ -52,6 +52,10 @@ h1 {
     color: #ffffff;
 }
 
+hr {
+    border: 1px solid #4a317d;
+}
+
 /* classes */
 
 .CrispPixels {
@@ -200,6 +204,44 @@ panel > img {
     transform: translateY(4px);
 }
 
+/* Page Marker Buttons */
+
+.construction:hover {
+    box-shadow: 0px 2px 5px #e5ff00;
+    animation-name: construction;
+    animation-duration: .5s;
+    transform: translateY(-4px);
+}
+
+@keyframes construction {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-4px);
+    }
+}
+
+.condemnation:hover {
+    box-shadow: 0px 2px 15px #a87918;
+    animation-name: construction;
+    animation-duration: .5s;
+    transform: translateY(-4px);
+}
+
+@keyframes condemnation {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-4px);
+    }
+}
+
+
+
 /* divs */
 
 .Real {
@@ -262,6 +304,10 @@ panel > img {
         background-color: #28dc16;
         border: outset #0a32b4 8px;
     }
+.Panel:has(.batabutton:hover) {
+    background-color: #000000;
+    border: outset #8f1a7a 8px;
+}
 
 .flexcontainer {
     display: flex;
