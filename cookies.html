@@ -61,43 +61,44 @@
             I haven't put any cookies onto your computer without your consent, it's up to you to pick the cookies you want. Currently the cookies are a WIP, so if you
             enable them, you might need to come back here again when they're finished to update your preferences.
         </p>
-        <!--<form>
+        <form>
             <b style="font-size:25px;">Homepage theme</b><br />
-            <i style="color:#808080;">The homepage's active theme. Default means whatever I have the theme set to at the time (for example, the Christmas theme in December.).</i><br /><br />
+            <i style="color:#808080;">The homepage's active theme. Default means whatever I have the theme set to at the time (for example, the Christmas theme in December, or Silver Standard year-round.).</i><br /><br />
             <select id="theme">
                 <option value="0">Default</option>
                 <option value="1">Silver Standard</option>
                 <option value="2">Christmas</option>
-                <!--<option value="3">Halloween</option>
+                <!--<option value="3">Halloween</option>-->
             </select>
         </form><br />
-        <form>-->
-            <!--<b style="font-size:25px;">Fun cookies</b><br />
-            <i style="color:#808080;">Allows the site to store information for fun stuff on secret pages. You'll be informed when a feature requires fun cookies.</i><br /><br />
+        <form>
+            <b style="font-size:25px;">Important cookies</b><br />
+            <i style="color:#808080;">Strongly suggested. Allows the site to store information for lore pages and other silly stuff. You'll be informed when a page requires fun cookies.</i><br /><br />
             <select id="fun" name="fun">
                 <option value="0">Disabled</option>
                 <option value="1">Enabled</option>
             </select>
         </form><br />
-        <form>
-            <b style="font-size:25px;">Bonus logos</b><br />
-            <i style="color:#808080;">Change the site logo on the homepage! If you disable fun cookies or clear your cookies you'll lose all of the bonus logos, and you'll lose access to this menu.</i><br /><br />
-                <select id="logo" name="logo">
-                <option value="default">Default (3D)</option>
-                <option value="0">3D</option>
-                <option value="1">3D 2003</option>
-                <option value="2">MS Paint</option>
-                <option value="3">The Rat</option>
-            </select>
+        <!--<form>
+        <b style="font-size:25px;">Bonus logos</b><br />
+        <i style="color:#808080;">Change the site logo on the homepage! If you disable fun cookies or clear your cookies you'll lose all of the bonus logos, and you'll lose access to this menu.</i><br /><br />
+            <select id="logo" name="logo">
+            <option value="default">Default (3D)</option>
+            <option value="0">3D</option>
+            <option value="1">3D 2003</option>
+            <option value="1">Halloween</option>
+            <option value="2">MS Paint</option>
+            <option value="3">The Rat</option>
+        </select>
         </form>-->
         <b style="font-size:25px;">Christmas Mode</b>
         <p>Brings back the Christmas lights and buttons from the 2023 Holiday Update.</p>
         <button onclick="christmasmode()">Activate</button> <button onclick="cookiekill()">Deactivate</button>
-        <!--<button onclick="makecookies()">Apply</button> <button onclick="cookiekill()">Delete</button>-->
+        <button onclick="makecookies()">Apply</button> <button onclick="cookiekill()">Delete</button>
         <!--content end-->
         <footer>
             <br /><br /><br /><br /><br /><br /><br /><br />
-            <center><img src="Assets/conbutton.png" style="cursor:help;" class="construction CrispPixels" title="This page is unfinished. It may be unpolished, and is likely missing features." alt="A button with a yellow and black border meant to resemble caution tape, a traffic cone, and text that says 'UNDER CONSTRUCTION!'"/></center>
+            <center><img src="Assets/conbutton.png" style="cursor:help;" class="construction CrispPixels" title="This page is unfinished. It may be unpolished, and is likely missing features." alt="A button with a yellow and black border meant to resemble caution tape, a traffic cone, and text that says 'UNDER CONSTRUCTION!'" /></center>
             <p style="text-align:center; font-size:15px;">&#169; AD 33 - 9999999 Silver Shorthair. all rights reserved</p>
             <p style="text-align:center; font-size:15px;">"A4 sheet of paper with a fold in the corner" is a registered trademark of <a href="miastonished.github.io">Mia</a></p><br />
         </footer>
@@ -116,4 +117,6 @@
     function cookiekill() {
         document.cookie = "theme=0; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
     }
+
+
 </script>

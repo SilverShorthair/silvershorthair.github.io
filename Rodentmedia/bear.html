@@ -1,10 +1,12 @@
 ﻿<!DOCTYPE html>
 <style>
     .forumbody {
-        background-color: #000000;
-        padding:15px;
-        margin:auto;
-        width:75%;
+        background-color: #1f060b;
+        padding: 15px;
+        margin: auto;
+        width: 75%;
+        border: 3px solid #8b8b8b;
+        box-shadow: 0px 0px 8px #000000;
     }
 
     .Class {
@@ -32,20 +34,23 @@
     }
 
     .TheSillyButtonsOverride {
-        background-color: #868686;
-        border: 1px solid #868686;
+        background-image: linear-gradient(#8b1126, #4e0909);
+        border: 3px solid #8b8b8b;
+        box-shadow: 0px 0px 8px #000000;
         color: white;
         padding: 3px 15px;
         text-align: center;
+        width: 160px;
         text-decoration: none;
         display: inline-block;
         font-size: 20px;
-        margin: 5px 2px;
+        margin: 5px 10px;
         cursor: pointer;
+        border-radius: 25px ;
     }
 
     .Forum {
-        background-color: #161e35;
+        background-color: #421b1b;
         color: #d8d8d8;
         margin: auto;
         margin-top: 10px;
@@ -79,7 +84,7 @@
 
     body {
         background-color: #f6dc43;
-        background-image: url('Rat stuff/Ratground2.png');
+        background-image: url('Rat stuff/rattile2.png');
     }
 
     h1 {
@@ -87,7 +92,7 @@
     }
 
     hr {
-        border: 1px solid #28314b;
+        border: 1px solid #1f060b;
         border-radius: 10px;
     }
 
@@ -106,23 +111,37 @@
         width: 88px;
         padding: 5px;
     }
+    .spamad {
+        z-index: 0;
+        cursor: url(mewmewsoul.png),auto;
+        transform: rotate(-4deg) translateY(-130px) translateX(70px);
+        position:absolute;
+    }
+
+    .spamtext {
+        z-index: 2;
+        position:absolute;
+    }
+
+
 </style>
 <html lang="en">
 <head>
-    <title>Bears</title>
-    <link rel="icon" type="image/x-icon" href="Rat stuff/Ratground.jpg">
+    <title>Bear</title>
+    <link rel="icon" type="image/x-icon" href="Rat stuff/archfavicon.png">
 </head>
 <body>
-    <header><a href=""><img src="Rat stuff/Rat logo.png" alt="A large 3D-modelled rat looking at the camera, with the text 'The Rat's Page' placed under it'" style="width:300px; padding: 10px;"></a>
-    <button class="TheSillyButtonsOverride TheSillierButtons" onclick="window.location = 'index.html'">Homepage</button>
-    <button class="TheSillyButtonsOverride TheSillierButtons" onclick="window.location = 'downloads.html'">Downloads</button>
-    <button class="TheSillyButtonsOverride TheSillierButtons" onclick="window.location = 'ChangeLog.html'">Change Log</button>
-    <button class="TheSillyButtonsOverride TheSillierButtons" onclick="window.location = 'AboutMe.html'">About Me</button>
+    <header><img src="Rat stuff/Rodentmedia.png" alt="A large 3D-modelled rat looking at the camera, with the text 'The Rat's Page' placed under it'"><br />
+    <button class="TheSillyButtonsOverride TheSillierButtons" onclick="window.location = 'index.html'">RatWeb 5</button>
+    <button class="TheSillyButtonsOverride TheSillierButtons" onclick="window.location = 'downloads.html'">Products</button>
+    <button class="TheSillyButtonsOverride TheSillierButtons" onclick="window.location = 'ChangeLog.html'">News</button>
+    <button class="TheSillyButtonsOverride TheSillierButtons" onclick="window.location = 'AboutMe.html'">Community</button>
+    <button class="TheSillyButtonsOverride TheSillierButtons" onclick="window.location = 'AboutMe.html'">About</button>
     </header>
     <div class="forumbody">
         <p>Home > General > What's Up With The Bears?</p>
         <div class="Forum">
-            <img src="Assets/lock.ico" alt=""/> This thread has been locked.
+            <img src="../Assets/lock.ico" alt="" /> This thread has been locked.
             <hr />
             <img src="Rat stuff/missing image.png" alt="A missing image icon." class="pfp">
             <p style="color: #cf2b2b;"><b>[DELETED]</b></p>
@@ -132,8 +151,9 @@
             </p>
             <p style="color:#cf2b2b;"><i>This user has been permanently removed from the forums for violating Rule #11. Please ensure you read the rules before posting.</i></p>
             <hr />
-            <span aria-hidden="true"><img src="Assets/alert.ico" />The signat&#65533;res of <code style="background-color:black;padding:3px;padding-left:10px;padding-right:10px;font-size:12px;"><b>[[DEAD STOCK]]</b></code> ar&#65533; noT <code style="background-color:black;padding:3px;padding-left:10px;padding-right:10px;font-size:12px;"><b>[[<img src="Assets/soul.ico" />SAVE]]</b></code>d.</span><br />
-            <img src='Ads/skad.png' alt="A barely-comprehensible image with the text 'CLICK HERE NOW IT'S YOUR ONLY' that gets cut off, a lot of unreadable text, and an old image of Skysupercharged in the bottom right." style='cursor: url(mewmewsoul.png),auto;transform:rotate(2deg);' onclick='sky()'><img src="Assets/alert.ico" alt=""/>
+            <ul class="CrispPixels" style="list-style-image:url('../Assets/alert.ico');">
+                <li style="font-size:16px">The signatures of deactivated and deleted users are not saved.</li>
+            </ul>
         </div>
         <div class="Forum">
             <hr />
@@ -143,14 +163,14 @@
                 OP doesn't know about the bears
             </p><br /><br />
             <hr />
-            <ul class="CrispPixels" style="list-style-image:url('Assets/alert.ico');">
+            <ul class="CrispPixels" style="list-style-image:url('../Assets/alert.ico');">
                 <li style="font-size:16px">The signatures of deactivated and deleted users are not saved.</li>
             </ul>
         </div>
         <div class="Forum">
             <hr />
             <img src="Rat stuff/missing image.png" alt="A missing image icon." class="pfp">
-            <p style="color:#2d86fa;"><b>mastercheif93</b></p>
+            <p style="color:#2d86fa;"><b>mastercheif890</b></p>
             <p>
                 Good luck with the bears lol
             </p><br /><br />
@@ -172,7 +192,7 @@
         <footer>
             <br />
             <p style="text-align:center; font-size:15px;">&#169;  19&#65533;&#65533; - &#65533;&#65533;&#65533;&#65533; Rodentmedia. all rats reserved</p>
-            <p style="text-align:center; font-size:15px;"><a href="AboutRat.html">About Rodentmedia</a> -- <a href="ratTOS.html">Terms Of Service</a> -- <a href="ratPrivacy">Privacy Policy</a></p>
+            <p style="text-align:center; font-size:15px;"><a href="AboutRat.html">About Rodentmedia</a> -- <a href="ratTOS.html">Terms Of Service</a> -- <a href="ratPrivacy.html">Privacy Policy</a></p>
         </footer>
     </div>
     </p>
