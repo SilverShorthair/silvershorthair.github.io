@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<style>
+    .forumbody {
+        background-color: #771418;
+        padding: 15px;
+        margin: auto;
+        width: 25%;
+        border: 3px solid white;
+        box-shadow: 0px 0px 8px #000000;
+    }
+
+    .Class {
+        background-color: #811f1f;
+        color: white;
+        border: 5px dashed #4e0909;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .CrispPixels {
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -o-crisp-edges;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: pixelated;
+        -ms-interpolation-mode: nearest-neighbor;
+    }
+
+    .SillyClass {
+        background-color: #004e56;
+        color: white;
+        border: 5px dotted #002724ff;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .TheSillyButtonsOverride {
+        background-image: linear-gradient(#8b1126, #4e0909);
+        border: 3px solid #8b8b8b;
+        box-shadow: 0px 0px 8px #000000;
+        color: white;
+        padding: 3px 15px;
+        text-align: center;
+        width: 250px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 5px 10px;
+        cursor: pointer;
+        border-radius: 25px;
+    }
+
+    .Forum {
+        background-color: #771418;
+        color: #d8d8d8;
+        margin: auto;
+        margin-top: 10px;
+        padding: 10px;
+        width: 70%;
+    }
+
+    a:link {
+        color: #adb0ff;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: #adb0ff;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #4fcddb;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:active {
+        color: #f57373;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    body {
+        background-color: #771418;
+        background-image: url('Rat stuff/rattile2.png');
+        color: #ffffff;
+    }
+
+    h1 {
+        color: #ffffff;
+    }
+
+    hr {
+        border: 1px solid #28314b;
+        border-radius: 10px;
+    }
+
+    header {
+        margin:auto;
+        width:80%;
+    }
+
+    .pfp {
+        float: left;
+        height: 88px;
+        width: 88px;
+        padding: 5px;
+    }
+
+    .login {
+        padding: 4px;
+        background-color: #868686;
+        color: #ffffff;
+        border: #2c315e;
+        box-shadow: 0px 3px 5px #5e5e5e inset;
+    }
+
+    .thewatcher {
+        z-index: -1;
+        pointer-events: none;
+        user-select: none;
+    }
+
+</style>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="Rat stuff/archfavicon.png">
+</head>
+<body>
+    <header>
+        <center>
+            <img src="Rat stuff/archlogo.png" alt="RODENTMEDIA ARCHIVE PROJECT" style="width:550px;"><br />
+        </center>
+    </header><br />
+    <div class="forumbody">
+        <p>
+            <center>
+                <h2>This page is for administrators only</h2>
+                <label for="username">Username:</label>
+                <input type="text" class="login" id="username">
+                <br /><br />
+                <label for="password">Password:</label>
+                <input type="text" class="login" id="password"><br /><br>
+                <a href="">Forgot password?</a>
+                <span style="color:#771418;">Looking at you, Y</span><br /><br />
+                <input type="submit" value="Login" onclick="password()"/>
+                <input type="checkbox" disabled id="remember" />
+                <label for="remember">Keep me signed in</label><br /><br />
+                <span id="incorrect" style="color: #ff3e3e;"></span>
+                <br />
+            </center>
+        </p>
+        <center><button class="TheSillyButtonsOverride TheSillierButtons" onclick="window.location = 'index.html'">&#8626 Back to main site</button></center>
+    </div>
+    <script src="getassets.js"></script>
+    <script>
+        let realuser = "Y"
+        let realpass = "xbox"
+        function password() {
+            let pass = document.getElementById('password').value
+            let user = document.getElementById('username').value
+            if (pass === realpass && user === realuser) {
+                window.location = 'AdminForum.html'
+            }
+            else {
+                document.getElementById('incorrect').innerHTML = "Incorrect username or password."
+            }
+        }
+    </script>
+</body>
+</html>

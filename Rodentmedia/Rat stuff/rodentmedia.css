@@ -1,0 +1,179 @@
+﻿body {
+	background-color: #f6dc43;
+	color: #ffffff;
+	background-image: url('rattile.png');
+}
+
+h1 {
+	color: #ffffff;
+}
+
+hr {
+	border: 1px solid #ffffff;
+	border-radius: 10px;
+	box-shadow: 0px 0px 8px #000000;
+}
+
+a:link {
+	color: #adb0ff;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #adb0ff;
+	background-color: transparent;
+}
+
+a:hover {
+	color: #4fcddb;
+	background-color: transparent;
+}
+
+a:active {
+	color: #f57373;
+	background-color: transparent;
+}
+
+.flex {
+	display: flex;
+}
+
+.crisppixels {
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -o-crisp-edges;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: pixelated;
+	-ms-interpolation-mode: nearest-neighbor;
+}
+
+.sidebar {
+	background-color: #1f060b;
+	width: 160px;
+	height: auto;
+	border: 1px solid #ffffff;
+	box-shadow: 0px 0px 8px #000000;
+	background: rgba( 31, 6, 11, 0.6);
+	backdrop-filter: blur(5px);
+}
+
+.contentbody {
+	background-color: #1f060b;
+	padding: 15px;
+	width: 75%;
+	border: 1px solid #ffffff;
+	box-shadow: 0px 0px 8px #000000;
+	background: rgba( 31, 6, 11, 0.6);
+	backdrop-filter: blur(5px);
+	border-radius: 0px 25px 25px 0px;
+}
+
+.content {
+	border: 1px solid #ffffff;
+	border-radius: 10px;
+	background-image: linear-gradient(#9b2828, #9b2828, #4e0909);
+	color: #ffffff;
+	margin: auto;
+	padding: 10px;
+	width: 70%;
+}
+
+.buttons {
+	background-image: linear-gradient(#9b2828, #9b2828, #4e0909);
+	border: 1px solid #ffffff;
+	box-shadow: 0px 0px 8px #000000 inset;
+	color: #ffffff;
+	padding: 3px 15px;
+	text-align: center;
+	width: 160px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.buttons:hover {
+	background-image: linear-gradient(-15deg, #1f6d00, #67c242, #75d34f, #ffffff);
+}
+
+.buttons:active {
+	background-image: linear-gradient(-15deg, #1f6d00, #4d982f, #62b640, #69bd47, #ffffff);
+	transform: translateY(4%);
+}
+
+.cartbutton {
+	width: initial;
+	padding: 3px 8px;
+	margin: 0px;
+	float: right;
+}
+
+.purchasebutton {
+	width: initial;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 5px;
+	background-color: #30a700;
+	background-image: linear-gradient(-15deg, #30a700, #78e94a, #ffffff);
+	border: 4px ridge #d5d5d5;
+	border-radius: 25px;
+	box-shadow: 3px 3px 10px #000000;
+	margin: 5px;
+}
+
+.purchasebutton:hover {
+	background-image: linear-gradient(-15deg, #1f6d00, #67c242, #75d34f, #ffffff);
+}
+
+.purchasebutton:active {
+	background-image: linear-gradient(-15deg, #1f6d00, #4d982f, #62b640, #69bd47, #ffffff);
+	transform: translateY(4%);
+}
+
+.productbox {
+	border: 1px solid #ffffff;
+	width: 256px;
+	height: 256px;
+	margin: 10px;
+	backdrop-filter: opacity(5);
+	display: grid;
+}
+
+.purchasecontainer {
+	background-color: #f6dc43;
+	background-image: url('rattile.png');
+	width: 250px;
+	padding: 10px;
+	border-radius: 15px;
+	border: 1px solid #ffffff;
+	box-shadow: 0px 0px 8px #000000;
+}
+
+.pfp {
+	float: left;
+	height: 88px;
+	width: 88px;
+	padding: 5px;
+}
+
+.errtext {
+	color: #4e0909;
+}
+
+.skamad {
+	z-index: 0;
+	cursor: url(mewmewsoul.png),auto;
+	transform: rotate(-4deg) translateY(-130px) translateX(70px);
+	position: absolute;
+}
+
+.skamtext {
+	z-index: 2;
+	position: absolute;
+}
+
+.thewatcher {
+	z-index: -1;
+	pointer-events: none;
+	user-select: none;
+}
