@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="18"
+   height="31.999998"
+   viewBox="0 0 4.7624998 8.4666661"
+   version="1.1"
+   id="svg1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient16">
+      <stop
+         style="stop-color:#7365e9;stop-opacity:0.76300579;"
+         offset="0"
+         id="stop16" />
+      <stop
+         style="stop-color:#8771db;stop-opacity:0.50867051;"
+         offset="1"
+         id="stop17" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient14">
+      <stop
+         style="stop-color:#351fff;stop-opacity:1;"
+         offset="0"
+         id="stop14" />
+      <stop
+         style="stop-color:#9773ee;stop-opacity:1;"
+         offset="1"
+         id="stop15" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient14"
+       id="linearGradient15"
+       x1="0"
+       y1="4.2333331"
+       x2="4.2333331"
+       y2="4.2333331"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0.26458334)" />
+    <linearGradient
+       xlink:href="#linearGradient16"
+       id="linearGradient17"
+       x1="0.43369323"
+       y1="3.9281464"
+       x2="2.9989026"
+       y2="3.9281464"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0.396875)" />
+  </defs>
+  <g
+     id="layer1">
+    <rect
+       style="fill:url(#linearGradient15);stroke-width:0.264583"
+       id="rect14"
+       width="4.2333331"
+       height="8.4666662"
+       x="0.26458332"
+       y="0"
+       rx="7.3436623e-18" />
+    <rect
+       style="mix-blend-mode:normal;fill:url(#linearGradient17);fill-opacity:1;stroke:#008080;stroke-width:0;stroke-dasharray:none;stroke-opacity:0"
+       id="rect16"
+       width="1.322917"
+       height="8.4666662"
+       x="0.79374999"
+       y="0"
+       rx="3.1134787e-18" />
+    <rect
+       style="fill:#540fe8;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:0"
+       id="rect17"
+       width="0.52916664"
+       height="8.4666662"
+       x="0.26458332"
+       y="0"
+       rx="6.9894504e-18" />
+  </g>
+</svg>
