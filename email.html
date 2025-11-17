@@ -1,0 +1,359 @@
+﻿<!DOCTYPE html>
+<style>
+    .forumbody {
+        background-color: #ffd0d0;
+        width: 75%;
+        border: 3px solid #dbaaaa;
+        box-shadow: 0px 0px 8px #000000;
+    }
+
+    .Class {
+        background-color: #811f1f;
+        color: white;
+        border: 5px dashed #4e0909;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .CrispPixels {
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -o-crisp-edges;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: pixelated;
+        -ms-interpolation-mode: nearest-neighbor;
+    }
+
+    .SillyClass {
+        background-color: #004e56;
+        color: white;
+        border: 5px dotted #002724ff;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .TheSillyButtonsOverride {
+        background-image: linear-gradient(#8b1126, #4e0909);
+        border: 3px solid #8b8b8b;
+        box-shadow: 0px 0px 8px #000000;
+        color: white;
+        padding: 3px 15px;
+        text-align: center;
+        width: 160px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 5px 10px;
+        cursor: pointer;
+        border-radius: 25px ;
+    }
+
+    .Forum {
+        background-color: #421b1b;
+        color: #d8d8d8;
+        margin: auto;
+        margin-top: 10px;
+        padding: 10px;
+        width: 70%;
+    }
+
+    .Topic {
+        background-color: #421b1b;
+        color: #d8d8d8;
+        margin-top: 10px;
+        padding: 15px;
+        width: 70%;
+        border-radius:25px;
+    }
+
+    a:link {
+        color: #7b7eca;
+        background-color: transparent;
+    }
+
+    a:visited {
+        color: #aac9db;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #aac9db;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:active {
+        color: #f57373;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    body {
+        background-color: #ffffff;
+        background-image: url('Rodentmedia/Rat stuff/rattile2.png');
+    }
+
+    h1 {
+        color: #ffffff;
+    }
+
+    hr {
+        border: 1px solid #1f060b;
+        border-radius: 10px;
+    }
+
+    body {
+        color: #000000;
+    }
+
+    header {
+        width:80%;
+    }
+
+    .pfp {
+        float: left;
+        height: 88px;
+        width: 88px;
+        padding: 5px;
+    }
+    .spamad {
+        z-index: 0;
+        cursor: url(mewmewsoul.png),auto;
+        transform: rotate(-4deg) translateY(-130px) translateX(70px);
+        position:absolute;
+    }
+
+    .spamtext {
+        z-index: 2;
+        position:absolute;
+    }
+
+    .topictitle {
+        font-size:25px;
+        text-decoration:underline;
+        font-weight:bold;
+    }
+    
+    .email {
+        background-color: #f5eaea;
+        padding:3px;
+        outline:1px solid #707070;
+        margin-top:1px; 
+    }
+    
+    .emailunread {
+        background-color: #ffffff;
+        padding:3px;
+        outline:1px solid #707070;
+        margin-top:1px; 
+        box-shadow: 1px 1px 1px black;
+    }
+    
+    .email:hover {
+        background-color: #ececec;
+        outline:1px solid #707070; 
+        cursor: pointer;
+    }
+
+    .emailunread:hover {
+        background-color: #ececec;
+        outline:1px solid #707070; 
+        cursor: pointer;
+    }
+
+    .attachment {
+        padding: 1px;
+        margin-right:0px;
+        outline:1px solid black;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .emailsidebar {
+        width: 163px;
+    }
+
+    .sidebaritem {
+        background-color: #ffeeee;
+        padding:1px;
+        padding-left:16px;
+        outline:1px solid #707070;
+        margin-top:1px;
+    }
+
+    .sidebaritembutton {
+        background-color: #ffeeee;
+        padding:1px;
+        padding-left:6px;
+        padding-top:8px;
+        padding-bottom:8px;
+        outline:1px solid #707070;
+        margin-top:1px;
+    }
+
+    .marker {
+        z-index: 5;
+        padding-left:155px;
+        padding-top: 422px;
+        position:absolute;
+        pointer-events: none;
+    }
+
+
+
+</style>
+<html lang="en">
+<head>
+    <title>You have (1) unread E-Mail</title>
+    <link rel="icon" type="image/x-icon" href="Assets/email.gif">
+</head>
+<body>
+    <img src="marker.gif"class="marker">
+    <header><img src="Rodentmedia/Rat stuff/rodentmediaemail.png" alt="Rodentmedia">
+    </header><br />
+    <div class="flex">
+
+    <div class="emailsidebar">
+        <div class="sidebaritembutton" style="font-weight: bold;"><button>Compose e-mail</button></div>
+        <div class="sidebaritem" style="font-weight: bold;background-color:#dbaaaa;">Inbox (1)</div>
+        <div class="sidebaritem">Sent</div>
+        <div class="sidebaritem">Drafts</div>
+        <div class="sidebaritem">Spam</div>
+        <div class="sidebaritem">Trash</div>
+    </div>
+
+    <div class="forumbody">
+
+        <div style="padding-top:8px;padding-left:8px;padding-bottom:4px;">Displaying <b>16</b> of <b>2,182</b> e-mails on this page.</div>
+       
+        <div style="padding:5px;background-color:#ffe1e1;">
+            <button>Archive</button>
+            <button>Report spam</button>
+            <button>Delete</button>
+        </div>
+
+        <div class="emailunread" onclick="JavaScript:newPopup('emailcontents.html');">
+            <input type="checkbox">
+            <b>Joe Placeholder | Awesome News!!!</b> - <span style="color:#707070;">Hey Silver, I found this cool site that gives you Quake for free!!!!!! I wanted to...</span> <button><img src="Assets/paperclip.ico"> File attached</button>
+        </div>
+
+        <div class="email">
+            <input type="checkbox">
+            <b>V╬╗╩ƒ╬╡╨┐ ≡ƒÑ₧ | Hello, my dear!</b> - <span style="color:#707070;">I am aware of your exceptional gaming skills. Do you like girls? If so, yuri...</span>
+        </div>
+
+        <div class="email">
+            <input type="checkbox">
+            <b>Rodentmedia | New reply to your post!</b> - <span style="color:#707070;">From @Harp9315: "I'll be pre-ordering Fallout New Vegas too! I hope that it has...</span>
+        </div>
+
+        <div class="email">
+            <input type="checkbox">
+            <b>Cursed One | DON'T READ THIS EMAIL</b> - <span style="color:#707070;">A boy named Mike died from too much gaming, now his soul haunts the web...</span>
+        </div>
+
+        <div class="email">
+            <input type="checkbox">
+            <b>Rodentmedia | Login Alert</b> - <span style="color:#707070;">A new device attempted to log into your Rodentmedia account. If this wasn't you, change your...</span>
+        </div>
+
+        <div class="email">
+            <input type="checkbox">
+            <b>Gerald R. Ford | Urgent Request</b> - <span style="color:#707070;">My fellow American, it's me, your favorite President, Gerald R. Ford. I need $8,000...</span>
+        </div>
+
+        <div class="email">
+            <input type="checkbox">
+            <b>Richard Nixon | Impending Doom</b> - <span style="color:#707070;">You're about to receive an email from Vice President Crook. He's lying, I need $8,000...</span>
+        </div>
+
+        <div class="email">
+            <input type="checkbox">
+            <b>Command™ | Quarterly Report </b> - <span style="color:#707070;">Hey Greg, Just A Reminder That The Quarterly Report Is Due On Friday - Looking Forward...</span>
+        </div>
+
+        <div class="email">
+            <input type="checkbox">
+            <b>Kmart | Help please</b> - <span style="color:#707070;">We're so sorry, but we need a massive favor. We bought WAY too many dishwashers and this is really...</span>
+        </div>
+
+        <div class="email">
+            <input type="checkbox">
+            <b><span style="user-select: none;">SDFG L.</span> | Are you okay?</b> - <span style="color:#707070;">Are you doing alright? you won't stop posting like the current year is 2010, and it's worrying...</span>
+        </div>
+
+        <div class="email">
+            <input type="checkbox">
+            <b>Joe Placeholder | Deathmatch</b> - <span style="color:#707070;">I know it's 3 in the morning where you are but I'm bored, so if you could boot up Doom so...</span>
+        </div>
+
+        <div class="email">
+            <input type="checkbox">
+            <b>Amazon | Order cancelled </b> - <span style="color:#707070;">Your order for "Quake (Jewel Case)" was cancelled because the payment method was declined...</span>
+        </div>
+
+        <div class="email">
+            <input type="checkbox">
+            <b>Penguin Bank | Insufficient funds </b> - <span style="color:#707070;">You tried to use your credit card on "Amazon.com", but you lacked the funds to pay for...</span>
+        </div>
+
+        <div class="email">
+            <input type="checkbox">
+            <b>us.gov | About your application </b> - <span style="color:#707070;">Thanks for reaching out, but President Obama is not looking for a "Cooler Vice President"...</span>
+        </div>
+
+        <div class="email">
+            <input type="checkbox">
+            <b>Rodentmedia | Get ready for RatWeb 8!</b> - <span style="color:#707070;">We know you've been waiting a while, but our new software suite is coming out...</span>
+        </div>
+
+        <div class="email">
+            <input type="checkbox">
+            <b>Amazon | Good Deals! </b> - <span style="color:#707070;">Seven items you have in your cart have gone on sale! "Rat (brown)" is now only $59.40 before tax...</span>
+        </div>
+
+        <footer>
+            <br />
+            <button disabled><</button><input type="text" size="1" placeholder="1"></input><button>></button>
+            <p style="text-align:center; font-size:15px;">&#169;  19&#65533;&#65533; - 2010 Rodentmedia. all rats reserved</p>
+            <p style="text-align:center; font-size:15px;"><a href="AboutRat.html">About Rodentmedia</a> -- <a href="ratTOS.html">Terms Of Service</a> -- <a href="ratPrivacy.html">Privacy Policy</a></p>
+        </footer>
+    </div>
+</div>
+    </p>
+    <!--    <a href="https://www.youtube.com/@Qu3rky"><img src="Ads/QuerkyAd.png" height="200" /></a>
+
+        <aside>WARNING!!!<br />BEARS IMMINENT.<br /> PLEASE PREPARE.</aside><br /><br /><br /><br />
+        <footer>
+            <hr /><br />
+            <center><img src="The Rat I Do Not Like.gif" width="20%" height="20%"></center><br />
+            <center><h1 style="color:#ffcb00; font-family: funny; font-size:80%">This message was paid for and provided by The Rat<sup>TM</sup></h1></center>
+
+
+            <p style="color:#b18d00;" onclick="Silly()">Hey uh if you're here just ignore this I'm trying to test Javascript</p>
+            -->
+    <script src="Rodentmedia/getassets.js"></script>
+    <script>
+        const greeting = new Notification(`You've received an email: "Awesome News!!!"`,{
+  body: `"Hey Silver, I found this cool site that gives you Quake for free!!!!!! I wanted to..."`,
+  icon: 'Assets/email.gif'
+});
+
+        function sky() {
+            if (confirm("WARNING: [userAgent request denied.] has detecteHASDDETECTED THAT THIS PAGE ISP ERFECTLY SAFE [100% Moneyback Guarantee!!!]WOULDYOU LIKE TO CONTINUEE??e?")) {
+                document.location = 'https://skysupercharged.github.io/skamton/PORTALMASTER';
+            } else {
+                document.location = 'https://skysupercharged.github.io/skamton/secret/404';
+            }
+        }
+
+        // Popup window code
+        function newPopup(url) {
+         popupWindow = window.open(
+          url,'popUpWindow','height=480,width=640,left=10,top=10,resizable=no,scrollbars=yes,toolbar=no,menubar=no,location=no,directories=no,status=no')
+        }
+    </script>
+</body>
+</html>
