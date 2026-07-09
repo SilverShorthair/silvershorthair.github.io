@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<style>
+    .container {
+        display: flex;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        background-color:rgb(79, 0, 82);
+    }
+    .navBar {
+        background-color: #2e297e;
+        color: white;
+        width: 225px;
+        height: 100vh;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        top: 0px;
+        left: 0px;
+        padding: 20px 0;
+        text-align: center;
+    }
+    .hamburger {
+        transform: translateY(120px);
+        background-color: #2e297e;
+        color: white;
+        height: 60px;
+        width: 60px
+    }
+    .hamburger:hover {
+        color: #82d7ff;
+        background: rgb(255, 255, 255);
+    }
+
+    .collapse {
+        width: 10px;
+    }
+    .show {
+        display: none;
+    }
+    .collapse .remove {
+        display:none;
+    }
+
+    .collapse .show {
+        display: block;
+    }
+
+    .navBar .jirp {
+        margin-bottom: 30px;
+        text-align: center;
+        object-fit: contain;
+        width: 140px;
+        height: 140px;
+        border-radius: 60%;
+        margin: 0 auto;
+    }
+    .navBarList {
+        color: #b10c95;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: rgb(16, 85, 141);
+        display: block;
+        padding: 13px 30px;
+        font-size: 16px;
+        position: relative;
+    }
+
+    .navBarList:hover {
+        color: #82d7ff;
+        background: rgb(255, 255, 255);
+        border-right: 2px solid rgb(5, 68, 104);
+    }
+    
+</style>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div class="container">
+        <div class="navBar" id="sidebar">
+            <img src="jir0we.github.io/images/RJA_jirp1.jpg" class="jirp remove">
+            <a href="index.html" class="navBarList remove">
+                <div class="remove">Home</div>
+            </a>
+                        <a href="aboutus.html" class="navBarList remove">
+                        <span class="navLinkIcon"><i class=jirpAboutus></i></span>
+                        <span class="remove">About Us</span>
+                    </a>
+                        <a href="updatelog.html" class="navBarList remove">
+                            <span class="navLinkIcon"><i class=jirpChanges></i></span>
+                            <span class="remove">Changelog</span>
+                        </a>
+        </div>
+        <div class="hamburgerspace"></div>
+        <div class="hamburger"><img src="jir0we.github.io/images/burger.png" onclick="collapse()" width="60" height="60" class="CrispPixels"></div>
+    </div>
+</body>
+</html>
+<script>
+    function collapse() {
+        document.getElementById("sidebar").classList.toggle("collapse");
+    }
+</script>

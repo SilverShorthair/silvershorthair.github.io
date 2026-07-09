@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29714eb5-20e5-4d82-85dc-0dff144d206f" name="Changes" comment="Full site revamp" />
+    <list default="true" id="29714eb5-20e5-4d82-85dc-0dff144d206f" name="Changes" comment="Full site revamp">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +25,7 @@
         <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/OLD" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -55,7 +57,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "<unknown>",
+    "git-widget-placeholder": "site-revamp",
     "javascript.preferred.runtime.type.id": "node",
     "last_opened_file_path": "/home/silver/Documents/silvershorthair.github.io",
     "list.type.of.created.stylesheet": "CSS",
@@ -119,6 +121,7 @@
       <workItem from="1783468686196" duration="6425000" />
       <workItem from="1783538504201" duration="3456000" />
       <workItem from="1783549283201" duration="12781000" />
+      <workItem from="1783563832050" duration="1352000" />
     </task>
     <task id="LOCAL-00001" summary="Deleted CoolMusic.html as a test">
       <option name="closed" value="true" />
@@ -136,7 +139,31 @@
       <option name="project" value="LOCAL" />
       <updated>1783563569998</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Full site revamp">
+      <option name="closed" value="true" />
+      <created>1783563855183</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1783563855183</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Full site revamp">
+      <option name="closed" value="true" />
+      <created>1783564048086</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1783564048086</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Full site revamp">
+      <option name="closed" value="true" />
+      <created>1783564974109</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1783564974109</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

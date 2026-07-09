@@ -1,0 +1,286 @@
+﻿<!DOCTYPE html>
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+    a:link {
+        color: #8b8b8b;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: #8b8b8b;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #aaaaaa;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+    a:active {
+        color: #585858;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+    /* Divs */
+    .chum {
+        background-color: #e4e4e4;
+        color: black;
+        width: 300px;
+        padding: 0px;
+        font-family: Arial;
+        font-size: 15px;
+        display: inline-block;
+    }
+    .box {
+        background-color: #e4e4e4;
+        color: black;
+        width: 909px;
+        padding: 0px;
+        border: 5px solid #e4e4e4;
+        margin: auto;
+        font-family: Arial;
+        font-size: 15px;
+    }
+    .center {
+        margin: auto;
+    }
+
+</style>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div class="box">
+        <div class="chum">
+            <div id="Chum1"></div>
+        </div>
+        <div class="chum">
+            <div id="Chum2"></div>
+        </div>
+        <div class="chum">
+            <b style="margin-left: 58%; color: #8b8b8b;"><a href="https://silvershorthair.github.io/chumboxinfo.html" target="_parent">Sponsored Links</a></b>
+            <div id="Chum3"></div>
+        </div>
+    </div>
+<script>
+
+let newChums = {
+    'blood': {
+        adImg: "Ads/Chum/Found.png",
+        adAlt: "Several Silvers floating in blood on the microscopic level.",
+        adDesc: "She Thought He Just Had The Flu, But When She Got A Blood Test, The Doctor Burst Into Tears",
+        adSrc: "SNN",
+    },
+    'fuck': {
+        adImg: "Ads/Chum/fuck.png",
+        adAlt: "A photo from the game Find the Silvers, with a red circle around an angry-looking Silver, who has a speech bubble with the word 'FUCK' (with the UCK being censored).",
+        adDesc: "Top 10 Hidden Video Game Endings the Developers did NOT Want ANYBODY to see",
+        adSrc: "SNN",
+    },
+    'dead': {
+        adImg: "Ads/Chum/deadquiz.png",
+        adAlt: "Text reading 'AM I DEAD QUIZ' in front of an upside down cross and a half dissolved greyscale pride flag",
+        adDesc: "This AI Quiz Reveals If You're Still Alive! Most FAIL!<br>",
+        adSrc: "QUIZTEST.ME",
+    },
+    'soul': {
+        adImg: "Ads/Chum/lonelysouls.png",
+        adAlt: "3 souls floating in a garden.",
+        adDesc: "Hot Local Souls Want Your Body, Click Here to Find Out More<br>",
+        adSrc: "localhost",
+    },
+    'free': {
+        adImg: "Ads/Chum/hell.png",
+        adAlt: "A photo of Find the Silvers with a miscolored background, featuring the following characters: Huggy Wuggy from Poppy Playtime, Ben from Talking Tom, the logo for Grand Theft Auto 5, the icon for My Singing Monsters, a red crewmate from Among Us making the 'shh' expression, Steve from Minecraft, The Neighbor from Hello Neighbor, a soldier from Call of Duty, and Red from Angry Birds.",
+        adDesc: "Try Find the Silvers FREE ONLINE TODAY - FREE ONLINE GAMES<br>",
+        adSrc: "FREE GAMES ONLINE - PLAY NOW AT...",
+    },
+    'tesla': {
+        adImg: "Ads/Chum/Nikola.png",
+        adAlt: "A photo of Nikola Tesla standing in front of an old drawing meant to represent a background, with a speech bubble saying 'Dunktastic!' and a caption at the bottom saying 'What did he know??'.",
+        adDesc: "Nikola Tesla's Last Words Revealed - And What He Said Will Shock you<br>",
+        adSrc: "SNN",
+    },
+    'invis': {
+        adImg: "Ads/Chum/invisible.png",
+        adAlt: "Text saying 'The Invisible Man?' next to a picture of Tom Holland with half of his face obscured by light grey and a black bar over his eyes",
+        adDesc: "15+ Celebrities who are hiding their face with Makeup! Number 15+ will come as no suprise!",
+        adSrc: "CONSPIRE.NN",
+    },
+    'moment': {
+        adImg: "Ads/Chum/moment.jpg",
+        adAlt: "An image of a talk show set. The focus of the image is on a very small man pulling a rabbit out of a hat as the host gestures for him to leave, with a woman on the left approaching the small man.",
+        adDesc: "43 Moments So Mind-Blowing We Can't Believe They Were Broadcast Uncensored",
+        adSrc: "SNN",
+    },
+    'cruise': {
+        adImg: "Ads/Chum/cruise.jpg",
+        adAlt: "A photo of a desert with a cruise ship distantly visible. The colors are somewhat distorted.",
+        adDesc: "Seniors Everywhere Are Rushing To Book These Nearly-Empty Cruises For A Low Price!",
+        adSrc: "SNN",
+    },
+
+    'shapedlikeglass': {
+        adImg: "Ads/Chum/shapedlikeglass.png",
+        adAlt: "An image depicting the Railgunner from Risk of Rain 2, alive on the left, then dead on the right, having shattered due to holding Shaped Glass. At the top is a notification for getting the achievement 'Moon Worshipper' by carrying five Lunar items at once, and at the bottom is the death message 'You have shattered into innumerable pieces.', above an image of Shaped Glass in the bottom left.",
+        adDesc: "She took 128 SHAPED GLASSES! The results may SHOCK YOU...<br>",
+        adSrc: "Petrichor V",
+    },
+    
+
+    'medical_advice': {
+        adImg: "Ads/Chum/Medical_Advice.png",
+        adAlt: "A man thinking. You can see his thought bubble, and inside of it is an image of an ear, a plus sign, a butterknife, an equals sign, and a question mark.",
+        adDesc: "Tired of Tinnitus? Try the Van Gogh Method!<br>",
+        adSrc: "SNN",
+    },
+
+
+    'boy-o': {
+        adImg: "Ads/Chum/Boy-O.png",
+        adAlt: "A leprechaun speaking at a lectern. He is surrounded by various news reporter microphones.",
+        adDesc: "“LISTEN HERE, BOY-O!”: Lucky the Leprechaun Speaks Out Against Tax Fraud Allegations",
+        adSrc: "SNN",
+    },
+
+
+    'dabloons': {
+        adImg: "Ads/Chum/Dabloons.png",
+        adAlt: "Two panels. A man wearing a cardboard box with a frown drawn in marker. Above him is text that says 'SADNESS!: ('. An arrow points to the next panel, where the frown on the box has been scribbled out and replaced with a large smile. There are gold Mario coins in front of him, and the text at the top says 'DABLOONS!'.",
+        adDesc: "Doubloons: The Cure for Depression Doctors Don't Want you to Know About< br >",
+        adSrc: "SNN",
+    },
+
+    
+    'angular_baby': {
+        adImg: "Ads/Chum/Angular_Baby_fixed.png",
+        adAlt: "Someone holding a photo of an unborn baby's x-ray scan. The baby has a conical shape and stern expression.",
+        adDesc: "The Beauty of Nature: Doctors Couldn’t Believe What They Saw in One Mother’s Sonogram",
+        adSrc: "SNN",
+    },
+
+
+    'marbles': {
+        adImg: "Ads/Chum/Marbles.png",
+        adAlt: "A photo of marbles with text in front of them that says 'GOBBLE 'EM UP.'",
+        adDesc: "You Literally Will Not Die: 9/10 Doctors Recommend This Surprising New Superfood",
+        adSrc: "SNN",
+    },
+
+
+    'dames': {
+        adImg: "Ads/Chum/Dames.png",
+        adAlt: "A couch with lips and eyes in front of flowers. In the bottom left is flaming text that says 'DAMES'",
+        adDesc: "Find Hot Single Couches in Your Area<br><br>",
+        adSrc: "SNN",
+    },
+
+
+    'who_could_it_be': {
+        adImg: "Ads/Chum/Who_could_it_be.png",
+        adAlt: "A papercat-shaped silhouette with a question mark above it.",
+        adDesc: "World’s Top Ten Cat-Shaped Stationary-Related Characters: Number One Might Surprise You!",
+        adSrc: "SNN",
+    },
+    
+    'nothing': {
+        adImg: "Ads/Chum/Nothing.png",
+        adAlt: "Text in front of a black background. Some of it is cut off, but the visible text says 'past the two brick buildings (line break) occupied by people with their (line break) complexities, (line break) of what I would be missing (line break) next month. (line break) of the people I had met (line break) daily life seemed to come to (two line breaks) of my own shortcomings (line break) I wanted to live.'",
+        adDesc: "You carry the burden of that which cannot be shared.<br>",
+        adSrc: "SNN",
+    },
+    
+    'doctors': {
+        adImg: "Ads/Chum/Doctors.png",
+        adAlt: "A woman sobbing, with text in front of her that says 'WHY DON'T THEY LOVE ME?!'",
+        adDesc: "Doctors Hate Her: They Just Kind of Do, You Know?<br>",
+        adSrc: "SNN",
+    },
+
+    
+    'child_labor': {
+        adImg: "Ads/Chum/Child_Labor.png",
+        adAlt: "A small child in the middle of a sandy-looking area. the child is holding a basket, and there's an arrow pointing to the child's face with text that says 'GRIMACE OF JOY (She's happy, I promise.)'",
+        adDesc: "Little Kids, Big Savings: What Rollbacks in Child Labor Laws Could Mean for Your Wallet!",
+        adSrc: "SNN",
+    },
+    
+    
+    'agree': {
+        adImg: "Ads/Chum/agree.png",
+        adAlt: "Judas from The Bible, Light Yagami from Death Note holding Vriska from Homestuck, and Jigsaw. Arrow pointing at Light with text that says 'KILLS People?'",
+        adDesc: "Top Ten Times We Agreed With All of a Character's Actions Forever And Ever<br>(And 5 Times We Came To Regret It)",
+        adSrc: "SNN",
+    },
+
+
+
+
+
+
+//    'skamton': {
+//        adImg: "Ads/skad.png",
+//        adAlt: "A barely-coherent image with the text 'CLICK HERE NOW IT'S YOUR ONLY' that gets cut off, a lot of incomprehensible text and images in the background, and an old image of Skysupercharged's face partly visible in the bottom right.",
+//       adDesc: "H EYY EVER Y!H AVE YOU EVER WANTED TO [BIG]!!? [PORTAL MASTER] EVEN!! WELL NOW'S YOUR [Shot] TO BE A [PORTAL MASTER] ALL YOU HAVE'VE TO DO !IS!! [Clique]",
+//        adSrc: "<a href='skysupercharged.github.io/skamton/PORTALMASTER'>skysupercharged.github.io/skamton/PORTALMASTER</a>",
+//    },
+};
+
+
+let redirects = [];
+
+for (i = 0; i < Object.entries(newChums).length; i++) {
+    redirects.push(Object.entries(newChums)[i]);
+}
+
+const min = 0;
+var max = Object.entries(newChums).length
+
+for(chumIter = 1; chumIter < 4; chumIter++){
+    chumbr1 = Math.floor(Math.random() * (max - min) + min);
+    repl1 = redirects[chumbr1][1];
+    
+    output1 = `<img src="${repl1.adImg}" alt="${repl1.adAlt}" class="center" /><p class="center"><b>${repl1.adDesc}</b><br /><b style="color: #8b8b8b; ">${repl1.adSrc}</b></p >`
+    redirects.splice(chumbr1, 1);
+    max = redirects.length;
+    
+    document.getElementById(`Chum${chumIter}`).innerHTML = output1;
+}
+
+
+
+//* Placeholder items *
+//  `<img src="Ads/Chum/Menplaceholder.png" class="center" />
+//    <p class="center"><b>How Accepting The Funny Man Into Your Life Can Help You Grow Stronger<br /></b><br /><b style="color: #8b8b8b; ">COTFM</b></p >`,
+//  `<img src="Ads/Chum/Skyplaceholder.png" class="center" />
+//    <p class="center"><b>breakign nerws blue humanoid alien thing spotted in {userlocation}<br /></b><br /><b style="color: #8b8b8b; ">SNN</b></p>`,
+//  `<img src="Ads/Chum/undefined.png" class="center" />
+//    <p class="center"><b>For whatever matters most, make it easier for potential customers to find your business with Google Ads.<br></b><b style="color: #8b8b8b; ">ads.google.com/home/</b></p>`,
+
+/* old format *
+let redirects = [
+    `<img src="Ads/Chum/Found.png" alt="Several Silvers floating in blood on the microscopic level." class="center" />
+    <p class="center"><b>She Thought He Just Had The Flu, But When She Got A Blood Test, The Doctor Burst Into Tears</b><br /><b style="color: #8b8b8b; ">SNN</b></p >`,
+    `<img src="Ads/Chum/fuck.png" alt="A photo from the game Find the Silvers, with a red circle around an angry-looking Silver, who has a speech bubble with the word 'FUCK' (with the UCK being censored)." class="center" />
+    <p class="center"><b>Top 10 Hidden Video Game Endings the Developers did NOT Want ANYBODY to see</b><br /><b style="color: #8b8b8b; ">SNN</b></p >`,
+    `<img src="Ads/Chum/deadquiz.png" alt="Text reading 'AM I DEAD QUIZ' in front of an upside down cross and ???." class="center" />
+    <p class="center"><b>This AI Quiz Reveals If You're Still Alive! Most FAIL!</b><br><br /><b style="color: #8b8b8b; ">QUIZTEST.ME</b></p >`,
+    `<img src="Ads/Chum/lonelysouls.png" alt="3 souls floating in a garden." class="center" />
+    <p class="center"><b>Hot Local Souls Want Your Body, Click Here to Find Out More</b><br><br /><b style="color: #8b8b8b; ">localhost</b></p >`,
+    `<img src="Ads/Chum/hell.png" alt="A photo of Find the Silvers with a miscolored background, featuring the following characters: Huggy Wuggy from Poppy Playtime, Ben from Talking Tom, the logo for Grand Theft Auto 5, the icon for My Singing Monsters, a red crewmate from Among Us making the 'shh' expression, Steve from Minecraft, The Neighbor from Hello Neighbor, a soldier from Call of Duty, and Red from Angry Birds." class="center" />
+    <p class="center"><b>Try Find the Silvers FREE ONLINE TODAY - FREE ONLINE GAMES</b><br><br /><b style="color: #8b8b8b; ">FREE GAMES ONLINE - PLAY NOW AT...</b></p >`,
+        `<img src="Ads/Chum/Nikola.png" alt="A photo of Nikola Tesla standing in front of an old drawing meant to represent a background, with a speech bubble saying 'Dunktastic!' and a caption at the bottom saying 'What did he know??'." class="center" />
+    <p class="center"><b>Nikola Tesla's Last Words Revealed - And What He Said Will Shock you</b><br><br /><b style="color: #8b8b8b; ">SNN</b></p >`
+];*/
+
+</script>
+</body>
+</html>

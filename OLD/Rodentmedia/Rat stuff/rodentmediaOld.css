@@ -1,0 +1,136 @@
+﻿.flexcontainer {
+    display: flex;
+}
+
+.forumbody {
+    background-color: #1f060b;
+    padding: 15px;
+    width: 75%;
+    border: 1px solid #8b8b8b;
+    box-shadow: 0px 0px 8px #000000;
+    background: rgba( 31, 6, 11, 0.6);
+    backdrop-filter: blur(5px);
+    border-radius: 0px 25px 25px 0px;
+}
+
+.sidebar {
+    background-color: #1f060b;
+    width: 160px;
+    height: auto;
+    border: 1px solid #8b8b8b;
+    box-shadow: 0px 0px 8px #000000;
+    background: rgba( 31, 6, 11, 0.6);
+    backdrop-filter: blur(5px);
+}
+
+.Class {
+    background-color: #811f1f;
+    color: white;
+    border: 5px dashed #4e0909;
+    margin: 10px;
+    padding: 10px;
+}
+
+.CrispPixels {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+.SillyClass {
+    background-color: #004e56;
+    color: white;
+    border: 5px dotted #002724ff;
+    margin: 10px;
+    padding: 10px;
+}
+
+.TheSillyButtonsOverride {
+    background-image: linear-gradient(#9b2828, #9b2828, #4e0909);
+    border: 1px solid #8b8b8b;
+    box-shadow: 0px 0px 8px #000000 inset;
+    color: white;
+    padding: 3px 15px;
+    text-align: center;
+    width: 160px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.Forum {
+    border-radius: 10px;
+    background-image: linear-gradient(#9b2828, #9b2828, #4e0909);
+    color: #ffffff;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    width: 70%;
+}
+
+a:link {
+    color: #adb0ff;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #adb0ff;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4fcddb;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active {
+    color: #f57373;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+body {
+    background-color: #f6dc43;
+    background-image: url('rattile.png');
+}
+
+h1 {
+    color: #ffffff;
+}
+
+hr {
+    border: 1px solid #1f060b;
+    border-radius: 10px;
+}
+
+body {
+    color: #ffffff;
+}
+
+header {
+}
+
+.pfp {
+    float: left;
+    height: 88px;
+    width: 88px;
+    padding: 5px;
+}
+
+.spamad {
+    z-index: 0;
+    cursor: url("mewmewsoul.png"),auto;
+    transform: rotate(-4deg) translateY(-130px) translateX(70px);
+    position: absolute;
+}
+
+.spamtext {
+    z-index: 2;
+    position: absolute;
+}

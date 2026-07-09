@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .TheSillyButtonsOverride {
+        background-color: #131b37;
+        background-image: linear-gradient(#13a1b3, #2c315e, #131b37);
+        color: white;
+        border: solid #1c2140 2.5px;
+        margin: 5px;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 5px 20px;
+        cursor: pointer;
+        box-shadow: 0 8px #2c315e;
+    }
+
+    .TheSillierButtonsOverride {
+        background-image: linear-gradient(#131b37, #2c315e, #131b37);
+    }
+
+    .TheSillierButtonsOverride:hover {
+        background-image: linear-gradient(#0a0d1d, #25294b, #0a0d1d);
+        box-shadow: 0 8px #1b1f3c;
+    }
+
+    .TheSillyButtonsOverride:active {
+        background-image: linear-gradient(#04060d, #131524, #04060d);
+        box-shadow: 0 4px #14172c;
+        transform: translateY(4px);
+    }
+
+    .TheQuizButtons {
+        background-color: #131b37;
+        background-image: linear-gradient(#494f86, #2c315e, #212e5e, #2d3d77);
+        border-radius: 15px;
+        color: white;
+        border: solid #1c2140 2.5px;
+        margin: 5px;
+        padding-left: 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        cursor: pointer;
+        box-shadow: 0 4px #2c315e;
+        width: 180px;
+        margin-top:30px;
+    }
+
+    .TheQuizButtons:hover {
+        background-image: linear-gradient(#494f86, #2c315e, #2a3a77, #34488f);
+        box-shadow: 0 4px #2c315e;
+    }
+
+    .TheQuizButtons:active {
+        background-image: linear-gradient(#2f3358, #1e2144, #1b264e, #151e3d);
+        box-shadow: 0 2px #14172c;
+        transform: translateY(4px);
+        color:#b2b2b2;
+    }
+
+        .TheRight {
+        background-color: #131b37;
+        background-image: linear-gradient(#8fff85, #41c041, #4c8347, #306334);
+        border-radius: 15px;
+        color: white;
+        border: solid #ffffff 2.5px;
+        margin: 5px;
+        padding-left: 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        cursor: pointer;
+        box-shadow: 0 4px #b9b9b9;
+        width: 180px;
+        margin-top:30px;
+    }
+
+            .TheWrong {
+        background-color: #131b37;
+        background-image: linear-gradient(#2f3358, #1e2144, #1b264e, #151e3d);
+        border-radius: 15px;
+        color: #b4b4b4;
+        border: solid #333333 2.5px;
+        margin: 5px;
+        padding-left: 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        cursor: pointer;
+        box-shadow: 0 4px #000000;
+        width: 180px;
+        margin-top:30px;
+        opacity: 70%;
+    }
+
+    .container {
+        display:flex;
+    }
+    
+    .quizcontainer {
+        width:200px;
+        margin-right:25px;
+        margin-top: 5px;
+    }
+
+    .containercontainer {
+        display:block;
+    }
+    
+    .sidetext {
+        margin-top: 25px;
+        width: 300px;
+    }
+    .timer {
+        width:140px;
+        height:140px;
+        background-image: conic-gradient(#3a417a 100%, #a7aff8 100%);
+        border: 5px solid #3a417a;
+        border-radius: 50%;
+        animation-name: timerspin;
+        animation-duration: 15s;
+    }
+    
+    @keyframes timerspin {
+        0% {background-image: conic-gradient(#3a417a 0%, #a7aff8 0%);}
+        33% {background-image: conic-gradient(#3a417a 33%, #a7aff8 33%);}
+        66% {background-image: conic-gradient(#3a417a 66%, #a7aff8 66%);}
+        100% {background-image: conic-gradient(#3a417a 100%, #a7aff8 100%);}
+    }
+
+    .invisible {
+        color:#160045;
+    }
+
+    .visible1 {
+        color:#fcde58;
+    }
+    .visible2 {
+        color:#ff1c32;
+    }
+    .visible3 {
+        color:#b2b2b2;
+    }
+
+</style>
+<html lang="en">
+<head>
+    <title>Who is the Vocaloid on Silver's head?</title>
+    <meta name="description" content="Template for pages that use the compact header.">
+    <link rel="icon" type="image/x-icon" href="quizzilver.png">
+    <link rel="stylesheet" href="../Stylish.css" />
+</head>
+<body>
+    <div class="Real">
+        <header>
+            <br />
+            <div>
+                <img src="../modern site logo.png" alt="THE SILVER SHORTHAIR WEBSITE" style="width:450px; padding-bottom: 10px;padding-left: 10px;">
+                <button class="TheSillyButtonsOverride TheSillierButtonsOverride" onclick="window.location = 'https://silvershorthair.github.io/'"><img src="Favicons/SmallSilver.png" /> Homepage</button>
+                <button class="TheSillyButtonsOverride TheSillierButtonsOverride" onclick="window.location = 'https://silvershorthair.github.io/portfolio/index.html'"><img src="Favicons/UnemployedSilver.png" /> Portfolio</button>
+                <button class="TheSillyButtonsOverride TheSillierButtonsOverride" onclick="window.location = 'https://silvershorthair.github.io/ChangeLog'"><img src="Favicons/WrittenSilver.png" />Change Log</button>
+                <button class="TheSillyButtonsOverride TheSillierButtonsOverride" onclick="window.location = 'https://silvershorthair.github.io/AboutMe'"><img src="Favicons/AboutSilver.png" />About Me</button>
+            </div>
+            <br /><br />
+        </header>
+        <!--content start-->
+        <span style="font-size: 25px;font-weight: bold;">Who is the Vocaloid on Silver's head?</span>
+        <div class="containercontainer">
+        <div class="container">
+        <div class="quizcontainer">
+        <button onclick="setTimeout(hint1, 3000)" id="gumi" class="TheQuizButtons">GUMI</button><br>
+        <button id="luka" class="TheQuizButtons">Megurine Luka</button><br>
+        <button id="true" class="TheQuizButtons" onclick="playAudio()">Kaai Yuki</button><br>
+        <button id="al" class="TheQuizButtons">Big Al</button><br>
+        </div>
+        <div>
+            <p class="sidetext">Take the quiz! Visit<br>
+            <a href="" style="text-decoration: underline;">silvershorthair.github.io/quizzes/1</a><br> or scan the QR code on your screen
+            <br>to try an interactive version of this quiz online!
+            </p>
+            <img src="qr/qr1.png" class="CrispPixels" style="height:140px;width:140px;">
+        </div>
+    </div>
+                <div class="container">
+        <img id="clock" src="clock.png" class="CrispPixels" style="height:140px;width:140px;">
+        <div style="margin-top:50px;">
+            <span id="hint1" class="invisible">Hint #1: She had a windy day</span><br>
+            <span id="hint2" class="invisible">Hint #2: She tried to learn guitar</span><br>
+            <span id="hint3" class="invisible">Hint #3: She <b>Lost</b> her <b>Umbrella</b></span><br>
+            <!--<span style="color:lime;">Hint #4: Zoom in the page by 150% when you get the screenshot Silver</b></span><br>-->
+        </div>
+        </div>
+</div>
+<button onclick="clunky()" style="float:right;">start</button>
+        
+        <!-- Content end -->
+        <footer>
+            <br /><br /><br /><br /><br />
+            <p style="text-align:center; font-size:15px;">&#169; AD 33 - 9999999 Silver Shorthair. all rights reserved</p>
+            <p style="text-align:center; font-size:15px;">"A4 sheet of paper with a fold in the corner" is a registered trademark of <a href="miastonished.github.io">Mia</a></p><br />
+        </footer>
+
+        <audio id="myAudio">
+  <source src="tada.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+</body>
+</html>
+<script>
+
+
+
+function clunky() {
+    document.getElementById("clock").src = "clock.gif"
+    setTimeout(hint1, 5000);
+    setTimeout(hint2, 10000);
+    setTimeout(hint3, 15000);
+}
+
+var x = document.getElementById("myAudio"); 
+
+function hint1() {
+  document.getElementById("hint1").classList.remove("invisible");
+  document.getElementById("hint1").classList.add("visible1");
+}
+
+function hint2() {
+  document.getElementById("hint2").classList.remove("invisible");
+  document.getElementById("hint2").classList.add("visible2");
+}
+
+function hint3() {
+  document.getElementById("hint3").classList.remove("invisible");
+  document.getElementById("hint3").classList.add("visible3");
+}
+
+
+function playAudio() { 
+  x.play();
+  document.getElementById("true").classList.remove("TheQuizButtons");
+  document.getElementById("true").classList.add("TheRight");
+  document.getElementById("gumi").classList.remove("TheQuizButtons");
+  document.getElementById("gumi").classList.add("TheWrong");
+  document.getElementById("luka").classList.remove("TheQuizButtons");
+  document.getElementById("luka").classList.add("TheWrong");
+  document.getElementById("al").classList.remove("TheQuizButtons");
+  document.getElementById("al").classList.add("TheWrong");
+
+// MODERN WEB DEVELOPERS: If someone tells you to optimize YOUR code, don't listen!
+
+//  const wrong = ["gumi", "luka", "al"];
+//  for (let i = 0; i < wrong.length; i++) {
+//  let z = 0;
+//  document.getElementById(wrong.indexOf(z)).classList.remove("TheQuizButtons");
+//  document.getElementById(wrong.indexOf(z)).classList.add("TheWrong");
+//  z = z++;
+//  }
+} 
+</script>

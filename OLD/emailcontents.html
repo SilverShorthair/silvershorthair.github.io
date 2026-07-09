@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+<style>
+    .forumbody {
+        background-color: #ffd0d0;
+        width: 75%;
+        border: 3px solid #dbaaaa;
+        box-shadow: 0px 0px 8px #000000;
+    }
+
+    .Class {
+        background-color: #811f1f;
+        color: white;
+        border: 5px dashed #4e0909;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .CrispPixels {
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -o-crisp-edges;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: pixelated;
+        -ms-interpolation-mode: nearest-neighbor;
+    }
+
+    .SillyClass {
+        background-color: #004e56;
+        color: white;
+        border: 5px dotted #002724ff;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .TheSillyButtonsOverride {
+        background-image: linear-gradient(#8b1126, #4e0909);
+        border: 3px solid #8b8b8b;
+        box-shadow: 0px 0px 8px #000000;
+        color: white;
+        padding: 3px 15px;
+        text-align: center;
+        width: 160px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 5px 10px;
+        cursor: pointer;
+        border-radius: 25px ;
+    }
+
+    .Forum {
+        background-color: #421b1b;
+        color: #d8d8d8;
+        margin: auto;
+        margin-top: 10px;
+        padding: 10px;
+        width: 70%;
+    }
+
+    .Topic {
+        background-color: #421b1b;
+        color: #d8d8d8;
+        margin-top: 10px;
+        padding: 15px;
+        width: 70%;
+        border-radius:25px;
+    }
+
+    a:link {
+        color: #7b7eca;
+        background-color: transparent;
+    }
+
+    a:visited {
+        color: #aac9db;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #aac9db;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:active {
+        color: #f57373;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    body {
+        background-color: #ffffff;
+        background-image: url('Rodentmedia/Rat stuff/rattile2.png');
+    }
+
+    h1 {
+        color: #ffffff;
+    }
+
+    hr {
+        border: 1px solid #1f060b;
+        border-radius: 10px;
+    }
+
+    body {
+        color: #000000;
+    }
+
+    header {
+        width:80%;
+    }
+
+    .pfp {
+        float: left;
+        height: 88px;
+        width: 88px;
+        padding: 5px;
+    }
+    .spamad {
+        z-index: 0;
+        cursor: url(mewmewsoul.png),auto;
+        transform: rotate(-4deg) translateY(-130px) translateX(70px);
+        position:absolute;
+    }
+
+    .spamtext {
+        z-index: 2;
+        position:absolute;
+    }
+
+    .topictitle {
+        font-size:25px;
+        text-decoration:underline;
+        font-weight:bold;
+    }
+    
+    .email {
+        background-color: #f5eaea;
+        padding:3px;
+        outline:1px solid #707070;
+        margin-top:1px; 
+    }
+    
+    .emailunread {
+        background-color: #ffffff;
+        padding:3px;
+        outline:1px solid #707070;
+        margin-top:1px; 
+        box-shadow: inset 0px 0px 2px black;
+    }
+    
+    .email:hover {
+        background-color: #ececec;
+        outline:1px solid #707070; 
+        cursor: pointer;
+    }
+
+
+
+    .attachment {
+        padding: 1px;
+        margin-right:0px;
+        outline:1px solid black;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .emailsidebar {
+        width: 163px;
+    }
+
+    .sidebaritem {
+        background-color: #ffeeee;
+        padding:1px;
+        padding-left:16px;
+        outline:1px solid #707070;
+        margin-top:1px;
+    }
+
+    .sidebaritembutton {
+        background-color: #ffeeee;
+        padding:1px;
+        padding-left:6px;
+        padding-top:8px;
+        padding-bottom:8px;
+        outline:1px solid #707070;
+        margin-top:1px;
+    }
+
+    .progs {
+        width:100%;
+        height:10px;
+        background-image: linear-gradient(to right, #ffffff #68ff21, #68ff21,  #68ff21,  #76ff37, #76ff37, #68ff21);
+        animation-name: progsress;
+        animation-duration: 12s;
+    }
+
+    .progscontainer {
+        margin-top: 4px;
+        width:120px;
+        height:10px;
+        background-color: rgb(231, 231, 231);
+        border: 1px solid rgb(187, 187, 187);
+    }
+
+    .buttonprog {
+        background-color: green;
+    }
+
+    .downloadbuttonpressed {
+        animation-name: downloadbutton;
+        animation-duration: 12s;
+    }
+
+    @keyframes progsress {
+        0% {
+            width: 1%;
+            background-image: linear-gradient(to right, #ffffff #68ff21, #68ff21,  #68ff21,  #76ff37, #76ff37, #68ff21);
+        }
+        25% {
+            width: 16%;
+            background-image: linear-gradient(to right, #68ff21, #68ff21, #ffffff,  #68ff21,  #76ff37, #76ff37, #68ff21);
+        }
+        40% {width: 35%}
+        50% {
+            width: 35%;
+            background-image: linear-gradient(to right, #68ff21, #68ff21,  #68ff21, #ffffff,  #76ff37, #76ff37, #68ff21);
+        }
+        60% {width: 50%}
+        71% {width: 75%}
+        75% {
+            width: 82%;
+            background-image: linear-gradient(to right, #68ff21, #68ff21,  #68ff21,  #76ff37, #ffffff, #76ff37, #68ff21);
+
+        }
+        80% {width: 99%}
+        90% {width: 99%}
+        99% {width: 100%}
+        100% {
+            width: 100%;
+            background-image: none;
+        }
+    }
+
+
+
+</style>
+<html lang="en">
+<head>
+    <title>Email</title>
+    <link rel="icon" type="image/x-icon" href="Rat stuff/archfavicon.png">
+</head>
+<body>
+    <div class="forumbody">
+
+        <div style="padding-top:8px;padding-left:8px;"><b>Subject:</b> Awesome News!!!</div>
+        <div style="padding-left:8px;"><b>Sender:</b> joefigureitoutlater@ratmail.rat</div>
+        <div style="padding-left:8px;padding-bottom: 4px;"><b>Recipient(s):</b> papercatgirl@ratmail.rat</div>
+        <div style="width:100px;height:10px;"></div>
+        <div style="padding:5px;background-color:#ffe1e1;">
+            <button>Reply</button>
+            <button>Forward</button>
+            <button>Delete</button>
+        </div>
+        <div class="emailunread">
+            Hey Silver,<br>
+            I found this cool site that gives you Quake for free!!!!!! I wanted to see if
+            you were up for some co-op later tonight. Once you've got it set up then let me
+            know.
+        </div>
+        <span id="downloadbuttonhere"><button style="margin-top:8px;" id="download" onclick="progress()"><img src="Assets/paperclip.ico"> QuakeFREE.zip (22.1 mb)</button></span>
+        <div id="proggoeshere"></div>
+
+
+        <footer>
+            <br />
+            <p style="text-align:center; font-size:15px;">&#169;  19&#65533;&#65533; - 2010 Rodentmedia. all rats reserved</p>
+            <p style="text-align:center; font-size:15px;"><a href="AboutRat.html">About Rodentmedia</a> -- <a href="ratTOS.html">Terms Of Service</a> -- <a href="ratPrivacy.html">Privacy Policy</a></p>
+        </footer>
+    </div>
+</div>
+    </p>
+    <!--    <a href="https://www.youtube.com/@Qu3rky"><img src="Ads/QuerkyAd.png" height="200" /></a>
+
+        <aside>WARNING!!!<br />BEARS IMMINENT.<br /> PLEASE PREPARE.</aside><br /><br /><br /><br />
+        <footer>
+            <hr /><br />
+            <center><img src="The Rat I Do Not Like.gif" width="20%" height="20%"></center><br />
+            <center><h1 style="color:#ffcb00; font-family: funny; font-size:80%">This message was paid for and provided by The Rat<sup>TM</sup></h1></center>
+
+
+            <p style="color:#b18d00;" onclick="Silly()">Hey uh if you're here just ignore this I'm trying to test Javascript</p>
+            -->
+    <script src="Rodentmedia/getassets.js"></script>
+    <script>
+        function sky() {
+            if (confirm("WARNING: [userAgent request denied.] has detecteHASDDETECTED THAT THIS PAGE ISP ERFECTLY SAFE [100% Moneyback Guarantee!!!]WOULDYOU LIKE TO CONTINUEE??e?")) {
+                document.location = 'https://skysupercharged.github.io/skamton/PORTALMASTER';
+            } else {
+                document.location = 'https://skysupercharged.github.io/skamton/secret/404';
+            }
+        }
+
+        // Popup window code
+        function newPopup(url) {
+         popupWindow = window.open(
+          url,'popUpWindow','height=480px,width=640px,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+        }
+
+        let progg = `<div class="progscontainer"><div class="progs"></div></div>`
+        let downlb = `<button style="margin-top:8px;" disabled id="download" onclick="progress()"><img src="Assets/paperclip.ico"> QuakeFREE.zip (0 mb)</button>`
+
+        function progress() {
+            document.getElementById("proggoeshere").innerHTML = progg;
+            document.getElementById("downloadbuttonhere").innerHTML = downlb;
+        }
+    </script>
+</body>
+</html>

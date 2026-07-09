@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<style>
+    body {
+        background-color: #000000;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -o-crisp-edges;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: pixelated;
+        -ms-interpolation-mode: nearest-neighbor;
+    }
+    .card {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height:360px;
+        width:240px;
+        left: 50%;
+    }
+</style>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body><br /><br /><br /><br /><br /><br />
+    <img src="../card.gif" class="card" id="card"/>
+</body>
+</html>
+<script>
+    function change() {
+        document.getElementById("card").innerHTML = '<img src="../cardback.gif" class="card"/>';
+    }
+</script>

@@ -1,0 +1,320 @@
+﻿<style >
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: linear-gradient(#080019, #080019, #160045);
+    background-color: #1c2140;
+    margin: -15px;
+}
+
+footer {
+    background-image: linear-gradient(#160045, #160045, #080019);
+    background-color: #1c2140;
+    margin: -15px;
+    margin-bottom:-30px;
+    padding-bottom:0px;
+}
+
+a:link {
+    color: #adb0ff;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #adb0ff;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4fcddb;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active {
+    color: #f57373;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+body {
+    background-image: url('Assets/Background new.png');
+    color: #ffffff;
+    background-color: black;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+/* classes */
+
+.CrispPixels {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+.ButtonText {
+    vertical-align: middle;
+}
+
+panel > img {
+    width: 88px;
+    height: 3000px;
+}
+
+
+/* buttons */
+
+.TheSillyButtons {
+    background-color: #131b37;
+    background-image: linear-gradient(#13a1b37, #2c315e, #131b37);
+    color: white;
+    border: solid #1c2140 2.5px;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 8px #2c315e;
+    width: 16%;
+    flex-grow: 1;
+    margin: auto 20px auto 20px;
+}
+
+.TheSillyButtons *{
+    vertical-align: middle;
+}
+
+.TheSillierButtons {
+    background-image: linear-gradient(#131b37, #2c315e, #131b37);
+}
+
+.PortalButton {
+    background-color: #ffffff;
+    border: solid #c6c6c6 2.5px;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: #c6c6c6;
+    font-size: 20px;
+    margin: 5px 5px;
+    cursor: pointer;
+    box-shadow: 0 8px #c6c6c6;
+}
+
+.TheSillierButtons:hover {
+    background-image: linear-gradient(#0a0d1d, #25294b, #0a0d1d);
+    box-shadow: 0 8px #1b1f3c;
+}
+
+.TheSillyButtons:active {
+    background-image: linear-gradient(#04060d, #131524, #04060d);
+    box-shadow: 0 4px #14172c;
+    transform: translateY(4px);
+}
+
+.PortalButton:hover {
+    color: aqua;
+    background-color: #15228d;
+    border: solid #006de4 2.5px;
+    box-shadow: 0 8px #006de4;
+}
+
+.PortalButton:active {
+    background-color: #a46707;
+    border: solid #ff9400 2.5px;
+    box-shadow: 0 4px #ff9400;
+    transform: translateY(4px);
+}
+
+.WebringButtonLeft {
+    background-color: #120039;
+    border: solid #0c0026 2.5px;
+    margin: 5px;
+    padding: 3px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 5px 5px;
+    cursor: pointer;
+    box-shadow: 0 8px #0c0026;
+}
+
+.WebringButtonLeft:hover {
+    color: aqua;
+    background-color: #0d002a;
+    border: solid #070015 2.5px;
+    box-shadow: 0 8px #070015;
+}
+
+.WebringButtonLeft:active {
+    background-color: #000000;
+    border: solid #414141 2.5px;
+    box-shadow: 0 4px #414141;
+    transform: translateY(4px);
+}
+
+.WebringButtonRight {
+    background-color: #120039;
+    border: solid #0c0026 2.5px;
+    margin: 5px;
+    padding: 3px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 5px 5px;
+    cursor: pointer;
+    box-shadow: 0 8px #0c0026;
+}
+
+.WebringButtonRight:hover {
+    color: aqua;
+    background-color: #0d002a;
+    border: solid #070015 2.5px;
+    box-shadow: 0 8px #070015;
+}
+
+
+.WebringButtonRight:active {
+    background-color: #0064af;
+    border: solid #00ffff 2.5px;
+    box-shadow: 0 4px #00ffff;
+    transform: translateY(4px);
+}
+
+/* divs */
+
+.Real {
+    background-color: #160045;
+    color: white;
+    width: 80%;
+    height: 100%;
+    padding: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: auto;
+}
+
+.Panel {
+    background-color: #120039;
+    color: white;
+    width: 352px;
+    height: min-content;
+    padding: 5px 10px;
+    margin: auto;
+    border: outset #120039 8px;
+    transition: 500ms;
+}
+
+.vertical-center {
+    margin:0;
+    position:absolute;
+    top:50%;
+    -ms-transform:translateY(-50%);
+    transform:translateY(50%);
+}
+
+    .Panel:has(.miabutton:hover) {
+        background-color: #bc0202;
+        border: outset #800000 8px;
+    }
+
+    .Panel:has(.vaebutton:hover) {
+        background-color: #171717;
+        border: outset #8e630c 8px;
+    }
+
+    .Panel:has(.skybutton:hover) {
+        background-color: #0064af;
+        border: outset #00ffff 8px;
+    }
+    .Panel:has(.gumibutton:hover) {
+        background-color: #f06292;
+        border: outset #eb144c 8px;
+    }
+    .Panel:has(.jembutton:hover) {
+        background-color: #43aaff;
+        border: outset #ff6aee 8px;
+    }
+
+.flexcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.reviews {
+    background-color: #281465;
+    width: 50%;
+    padding-top: 2px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 32px;
+}
+
+::-webkit-scrollbar-track {
+    background-image: url('Assets/Scrollbar background.png');
+}
+
+::-webkit-scrollbar-thumb {
+    background: url('Assets/Scrollbar Thumb.png') no-repeat;
+    background-size: 28px 32px;
+    background-position: 2px;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-image: url('Assets/Scrollbar click.png');
+    }
+
+::-webkit-scrollbar-button:vertical:increment {
+    background-image: url('Assets/Scrollbar down.png');
+    background-size: 32px 31px;
+    width: 32px;
+    height: 31px;
+}
+
+::-webkit-scrollbar-button:vertical:decrement {
+    background-image: url('Assets/Scrollbar up.png');
+    background-size: 32px 31px;
+    width: 32px;
+    height: 31px;
+}
+
+::-webkit-scrollbar-button:vertical:increment:hover {
+    background-image: url('Assets/Scrollbar down click.png');
+    background-size: 32px 31px;
+    width: 32px;
+    height: 31px;
+}
+
+::-webkit-scrollbar-button:vertical:decrement:hover {
+    background-image: url('Assets/Scrollbar up click.png');
+    background-size: 32px 31px;
+    width: 32px;
+    height: 31px;
+}
+
+<html lang="en" >

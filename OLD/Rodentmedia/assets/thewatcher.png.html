@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+        background-image: url("rattile.png")
+    }
+</style>
+<head>
+<title>Page Unavailable!</title>
+</head>
+<body>
+<img src="http://rodentmedia.rat/assets/rodentmedialogo.png/" alt="RODENTMEDIA">
+<h1>
+404 - File unavailable!
+</h1>
+    <p>
+        Our little rats searched all over our servers, but they couldn't find <code>assets/thewatcher.png</code><br>
+        Check to make sure the URL you entered is correct. Or, return to <a onclick="previous()" href="http://rodentmedia.rat/about-rodentmedia.html">your previous page</a>.
+    </p>
+<p>
+    Similar pages:
+    <ul>
+        <li><a href="http://rodentmedia.rat/forums/anyone-interested-in-birdwatching.html">Forum - Anyone interested in birdwatching?</a></li>
+        <li><a href="http://rodentmedia.rat/news/new-skam-ads-trojan-watch-out.html">News - New Scam Uses Infected Ads To Spread Trojans, Here's What To Watch Out For.</a></li>
+        <li><a href="http://rodentmedia.rat/sponsored/vintage-watches.html">Sponsored Deals - Vintage watches for sale!</a></li>
+        <li id="message"></li>
+    </ul>
+</p>
+</body>
+</html>
+<script>
+function title() {
+        setInterval(() => {document.title = "Be careful when you're watching, witnesses make the world go round."}, 2500);
+    }
+
+function previous() {
+    document.getElementById('message').innerHTML = "<a href='there was nothing left to see.'>You thought you heard glass shattering, but as you turned around, you realized there was nothing left to break.</a>"
+}
+
+</script>

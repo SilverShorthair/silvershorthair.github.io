@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+
+
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+    <!--Tab Title-->
+    
+    <title>
+    Dating Sim
+    </title>
+    
+    
+    
+    <!--Tab Image-->
+    
+    <link rel="icon" type="image/x-icon" href="images/hiyaderredicon.png">
+    
+    
+    
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    </head>
+
+
+
+<!--Defining-->
+<center>
+<image id="event1A" width="30%">
+</image>
+<br> <br>
+<text id="event1B">
+</text>   
+</center>
+<center>
+<image id="event2A" width="30%">
+</image>
+<br><br>
+<text id="event2B">
+</text>
+</center>
+<br><br>
+
+
+
+
+
+<center>
+<button onclick="event2()"> <img src="images/webring/derredbutton.png"> </button>
+<br> Say hiya
+<br><br>
+<button onclick="event1()"> <img src="images/webring/derredbutton.png"> </button>
+<br> Say hi
+</center>
+
+
+
+<body>
+
+</body>
+
+<script>
+
+function event1(){
+    document.getElementById('event1A').src = "images/mood/norm.png";
+    document.getElementById('event1B').innerHTML = 'hi';
+    element = document.getElementById('event2A');
+    element.remove();
+    element = document.getElementById('event2B');
+    element.remove();
+}
+
+function event2(){
+    document.getElementById('event2A').src = "images/mood/pissed.png";
+    document.getElementById('event2B').innerHTML = 'you want to <b>what!?</b>';
+    element = document.getElementById('event1A');
+    element.remove();
+    element = document.getElementById('event1B');
+    element.remove();
+}
+
+
+
+</script>
+
+</html>

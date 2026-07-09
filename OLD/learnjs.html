@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<style>
+    .grid-container-container {
+        width: min-content;
+        line-height:.4;
+        border: 5px solid red;
+        background-color: red;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: red;
+        padding:2px;
+        width: min-content;
+    }
+    .grid-item {
+        padding: 2px;
+        text-align: center;
+    }
+
+    .chum {
+        background-color: #e4e4e4;
+        color: black;
+        width: 300px;
+        padding: 0px;
+        font-family: Arial;
+        font-size: 15px;
+        display: inline-block;
+    }
+
+    .box {
+        background-color: #e4e4e4;
+        color: black;
+        width: 300px;
+        padding: 0px;
+        border: 5px solid #e4e4e4;
+        font-family: Arial;
+        font-size: 15px;
+        overflow-y: hidden;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+</style>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>WORSE CALCULATOR</h1>
+    <p>Select the first number to be math'd:</p>
+    <input type="number" autocomplete="off" id="n1">
+    <p>Select the second number to be math'd:</p>
+    <input type="number" autocomplete="off" id="n2">
+    <p>Select your favorite math:</p>
+    <form name="favorite" id="favorite" autocomplete="off">
+        <input type="radio" id="addi" name="flavor" value="0">
+        <label for="addi">Addition!</label><br>
+        <input type="radio" id="subt" name="flavor" value="1">
+        <label for="subt">Subtraction!</label><br>
+        <input type="radio" id="mult" name="flavor" value="2">
+        <label for="mult">Multiplication!</label><br>
+        <input type="radio" id="divi" name="flavor" value="3">
+        <label for="divi">Division!</label>
+    </form>
+    <br />
+    <input type="checkbox" id="privacy" name="privacy" autocomplete="off" onclick="privacypol()">
+    <label for="privacy">I have read the <a href="http://www.watermelons.com/digimedia_privacy_policy.html">Worse Calculator™ privacy policy</a> and agree to the data collection described.</label><br />
+    <!--<input type="checkbox" id="newsletter" name="newsletter" autocomplete="off">
+    <label for="newsletter">Email me when Worse Calculator™ receives updates, or to notify me of any special promotions from Worse Calculator™ or its affiliates.</label><br />
+    <input type="checkbox" id="robot" name="robot" autocomplete="off">
+    <label for="robot">I Am Not A Robot</label>-->
+    <br />
+    <input id="submityay" type="submit" value="Math!" disabled autocomplete="off" onclick="wowthenum()">
+    <p id="demo"></p>
+    <!--    <div class="grid-container-container"><br>
+            <p>Select all images with</p>
+            <h2>stop signs</h2>
+            <p>If there are none, click verify.</p>
+            <div class="grid">
+                <div class="grid-item"><img src="captcha\captchaready\c01.jpg" /></div>
+                <div class="grid-item"><img src="captcha\captchaready\c01.jpg" /></div>
+                <div class="grid-item"><img src="captcha\captchaready\c01.jpg" /></div>
+                <div class="grid-item"><img src="captcha\captchaready\c01.jpg" /></div>
+                <div class="grid-item"><img src="captcha\captchaready\c01.jpg" /></div>
+                <div class="grid-item"><img src="captcha\captchaready\c01.jpg" /></div>
+                <div class="grid-item"><img src="captcha\captchaready\c01.jpg" /></div>
+                <div class="grid-item"><img src="captcha\captchaready\c01.jpg" /></div>
+                <div class="grid-item"><img src="captcha\captchaready\c01.jpg" /></div>
+            </div>
+            <button class="TheSillyButtons TheSillierButtons" onclick="window.location = 'https://silvershorthair.github.io/'"><img src="Favicons/SmallSilver.png" class="CrispPixels" /> Homepage</button>
+        </div>-->
+    <br /><br /><br /><br /><br /><br />
+    <p>Image file name:</p>
+    <input type="text" autocomplete="off" id="cI">
+    <p>Image alt text:</p>
+    <input type="text" autocomplete="off" id="cA">
+    <p>Ad contents:</p>
+    <input type="text" autocomplete="off" id="cT">
+    <p>Ad provider:</p>
+    <input type="text" autocomplete="off" id="cC">
+    <br /><br />
+    <input id="cS" type="submit" value="Generate" autocomplete="off" onclick="chumgen()"><br><br>
+    <input type="text" autocomplete="off" value="" readonly id="chumoutput" />
+    <button onclick="clipboard()">Copy To Clipboard</button><br /><br>
+    <div class="box">
+        <div class="chum">
+            <img src="Ads/Chum/Found.png" class="center" />
+            <p class="center"><b>She Thought He Just Had The Flu, But<br />When She Got A Blood Test, The Doctor<br />Burst Into Tears</b><br /><b style="color: #8b8b8b; ">SNN</b></p>
+        </div>
+    </div>
+        <br /><br />
+</body>
+</html>
+
+<script>
+    let tf = 1;
+    let a
+    let b
+    let x
+    let y
+    let z
+    function privacypol() {
+        tf = !tf;
+        document.getElementById("submityay").disabled = tf;
+    }
+
+    function wowthenum() {
+        a = Number(document.forms["favorite"]["flavor"].value)
+        y = Number(n1.value)
+        z = Number(n2.value)
+        let fav = [
+            y + z,
+            y - z,
+            y * z,
+            y / z
+        ];
+        x = fav[a];
+        document.getElementById("demo").innerHTML = x;
+    }
+
+    function chumgen() {
+        x = document.getElementById("cI").value
+        y = document.getElementById("cA").value
+        z = document.getElementById("cT").value
+        a = document.getElementById("cC").value
+        b = `<img src="Ads/Chum/${x}" alt="${y}" class="center" />
+    <p class="center"><b>${z}</b><br /><b style="color: #8b8b8b; ">${a}</b></p>`
+        document.getElementById("chumoutput").value = b;
+    }
+
+    function clipboard() {
+        var copyText = document.getElementById("chumoutput");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+        navigator.clipboard.writeText(copyText.value);
+    }
+</script>
