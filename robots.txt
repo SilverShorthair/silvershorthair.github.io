@@ -1,2 +1,19 @@
 User-agent: *
 Disallow: /
+
+User-agent: ia_archiver
+User-agent: Googlebot
+User-agent: DuckDuckBot
+User-agent: YandexBot
+User-agent: Slurp
+User-agent: Bingbot
+User-agent: TinEye
+User-agent: Baiduspider
+User-agent: MojeekBot
+User-agent: Qwantbot
+User-agent: sogou spider
+User-agent: Yeti
+Disallow:
+
+User-agent: Google-CloudVertexBot
+Disallow: /

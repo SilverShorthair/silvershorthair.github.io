@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="29714eb5-20e5-4d82-85dc-0dff144d206f" name="Changes" comment="Full site revamp" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/OLD" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SilverShorthair&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/SilverShorthair/silvershorthair.github.io.git&quot;,
+    &quot;accountId&quot;: &quot;028a52d6-ff95-4b26-9dca-b7e2fe1a8fa1&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3E6Ibqd7TQuseK4apvgVEPWuvOb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.index.html.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "<unknown>",
+    "javascript.preferred.runtime.type.id": "node",
+    "last_opened_file_path": "/home/silver/Documents/silvershorthair.github.io",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "io.unthrottled.doki.settings.ThemeSettings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/silvershorthair.github.io/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-WS-261.24374.125" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="29714eb5-20e5-4d82-85dc-0dff144d206f" name="Changes" comment="" />
+      <created>1779492667419</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1779492667419</updated>
+      <workItem from="1779492668963" duration="93000" />
+      <workItem from="1779492772109" duration="10882000" />
+      <workItem from="1779647992167" duration="22000" />
+      <workItem from="1779736657572" duration="3781000" />
+      <workItem from="1781990974799" duration="211000" />
+      <workItem from="1781991339167" duration="435000" />
+      <workItem from="1781997515059" duration="10486000" />
+      <workItem from="1782067333045" duration="2013000" />
+      <workItem from="1782079821280" duration="6802000" />
+      <workItem from="1782163916876" duration="926000" />
+      <workItem from="1782165708114" duration="1621000" />
+      <workItem from="1782249238492" duration="7848000" />
+      <workItem from="1782350599946" duration="1323000" />
+      <workItem from="1782414150313" duration="5307000" />
+      <workItem from="1782609492774" duration="2605000" />
+      <workItem from="1783039128957" duration="11505000" />
+      <workItem from="1783097795251" duration="23208000" />
+      <workItem from="1783143804215" duration="1681000" />
+      <workItem from="1783188925943" duration="13865000" />
+      <workItem from="1783278162008" duration="1939000" />
+      <workItem from="1783288702410" duration="7090000" />
+      <workItem from="1783306875352" duration="1209000" />
+      <workItem from="1783381677915" duration="11954000" />
+      <workItem from="1783465159163" duration="2690000" />
+      <workItem from="1783468686196" duration="6425000" />
+      <workItem from="1783538504201" duration="3456000" />
+      <workItem from="1783549283201" duration="12781000" />
+    </task>
+    <task id="LOCAL-00001" summary="Deleted CoolMusic.html as a test">
+      <option name="closed" value="true" />
+      <created>1779493068745</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1779493068745</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Full site revamp">
+      <option name="closed" value="true" />
+      <created>1783563569998</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1783563569998</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Deleted CoolMusic.html as a test" />
+    <MESSAGE value="Full site revamp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Full site revamp" />
+  </component>
+</project>
